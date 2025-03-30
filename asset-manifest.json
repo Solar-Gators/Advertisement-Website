@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba546222.css",
+    "main.css": "/static/css/main.cc93b755.css",
     "main.js": "/static/js/main.15741139.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
@@ -137,11 +137,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.ba546222.css.map": "/static/css/main.ba546222.css.map",
+    "main.cc93b755.css.map": "/static/css/main.cc93b755.css.map",
     "main.15741139.js.map": "/static/js/main.15741139.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba546222.css",
+    "static/css/main.cc93b755.css",
     "static/js/main.15741139.js"
   ]
 }
