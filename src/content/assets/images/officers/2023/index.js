@@ -18,6 +18,7 @@ export { default as chassis23 }         from "./chassis23.JPG";
 export { default as telemetry23 }       from "../2022/embedsyst22.JPG";
 export { default as suspension23 }      from "./suspension23.JPG";
 export { default as lowvoltage23 }      from "./lowvolt23.JPG";
+export { default as stratLead23 }      from "./stratLead23.JPG";
 export {default as dev23}               from "./dev23.jpg"
 
 // export { default as highvoltage23 }     from "./highvolt23.JPG";
