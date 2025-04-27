@@ -8,7 +8,7 @@ import { president24, vicepresident24, treasurer24, secretary24, business24, mec
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
         integrationPM230, integrationPM231, integrationPM232, aerobody23, batterypack23, brakes23, chassis23, telemetry23,
-        suspension23, lowvoltage23, dev23} from './2023/index'
+        suspension23, lowvoltage23, stratLead23, dev23} from './2023/index'
 
 // 2022-23
 import {president22, vicepresident22, treasurer22, secretary22, business22, electricalPM22, integrationPM22, mechanicalPM22,
@@ -72,7 +72,7 @@ let pms23 = [["Matthew Shen", "Electrical PM", electricalPM23],
 let mech_aero23 = [["William Tran", "Aerobody", aerobody23], ["Peyton Striblen", "Battery Pack", batterypack23], ["Ellie Alderman", "Brakes", brakes23],
     ["Oliver Tumbel", "Suspension", suspension23], ["Elijah Baluyot", "Chassis", chassis23]];
 let electrical23 =  [["Yashasvi Bhat", "Telemetry", telemetry23], ["Jackson Werner", "Low Voltage", lowvoltage23]];
-let webdev23 = [["Natalie Sesodia", "Web Developer", dev23]]
+let webdev23 = [["Jack Schedel", "Strategy", stratLead23], ["Natalie Sesodia", "Web Developer", dev23]]
 
 //2022-23: (Names, Positions, Headshot)
 let executive_board22 = [["Christian Michaelis", "President", president22], ["Lauren Shaw", "Vice President", vicepresident22], ["Andrew Carter", "Secretary", secretary22],
