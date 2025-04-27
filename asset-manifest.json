@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.cc93b755.css",
-    "main.js": "/static/js/main.15741139.js",
+    "main.js": "/static/js/main.7449c27e.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
+    "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
     "static/media/auxilary21.jpg": "/static/media/auxilary21.79c83b65572917d65823.jpg",
     "static/media/IMG_9219.JPG": "/static/media/IMG_9219.6763e7fddd5d4d81fd2f.JPG",
     "static/media/car3_fl_gators.JPG": "/static/media/car3_fl_gators.595fecf1dd42db851053.JPG",
@@ -20,7 +21,6 @@
     "static/media/secretary22.JPG": "/static/media/secretary22.152b234acaa243176fc9.JPG",
     "static/media/aero22.JPG": "/static/media/aero22.7cb66811cc3c0adc243a.JPG",
     "static/media/FSGP24.JPG": "/static/media/FSGP24.a90c5b9a3a1279c5affe.JPG",
-    "static/media/stratLead24.JPG": "/static/media/stratLead24.bed3f2fe87dc4e2f2e93.JPG",
     "static/media/embedsyst22.JPG": "/static/media/embedsyst22.56196a0023b20f11a2e2.JPG",
     "static/media/car3_zoom.jpg": "/static/media/car3_zoom.175bdc1aa240feb56174.jpg",
     "static/media/brakes22.JPG": "/static/media/brakes22.1bc3a229bf26ca8d6e81.JPG",
@@ -103,6 +103,7 @@
     "static/media/suspension21.JPG": "/static/media/suspension21.e3a51f6e8873bc07be05.JPG",
     "static/media/Molex.png": "/static/media/Molex.ca748d015f37a13e7c98.png",
     "static/media/vicepresident19.JPG": "/static/media/vicepresident19.d445571e22cf220666eb.JPG",
+    "static/media/stratLead24.JPG": "/static/media/stratLead24.3613b978cd95021be4d0.JPG",
     "static/media/ExtremeCanopy.png": "/static/media/ExtremeCanopy.7c5311674294bd50328c.png",
     "static/media/instagram_logo.png": "/static/media/instagram_logo.8ab34323450b8562ca4d.png",
     "static/media/PhoenixThermal.png": "/static/media/PhoenixThermal.1ca8cbafd46f646077b0.png",
@@ -138,10 +139,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.cc93b755.css.map": "/static/css/main.cc93b755.css.map",
-    "main.15741139.js.map": "/static/js/main.15741139.js.map"
+    "main.7449c27e.js.map": "/static/js/main.7449c27e.js.map"
   },
   "entrypoints": [
     "static/css/main.cc93b755.css",
-    "static/js/main.15741139.js"
+    "static/js/main.7449c27e.js"
   ]
 }
