@@ -102,7 +102,7 @@ export default function MissionStatements({on_mobile, white_background, button})
    }
    else {
        return (
-           <Container fluid="true" className="section" style={{background: "#00203E"}}>
+           <Container fluid="true" className="section" style={{background: "#283f8c"}}>
                <Row>
                    <h2>
                        Our Mission

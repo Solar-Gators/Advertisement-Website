@@ -54,7 +54,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
         }
         else {
             return (
-                <Col className="no-margin-padding" id={name} style={{background: "#00203E"}}>
+                <Col className="no-margin-padding" id={name} style={{background: "#283f8c"}}>
                     <TextContent textColor={"#cdcdcd"}/>
                 </Col>
             )
@@ -64,7 +64,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
     else {
         if (pic_side === "right") {
             return (
-                <Row className="no-margin-padding" id={name} style={{background: "#00203E"}}>
+                <Row className="no-margin-padding" id={name} style={{background: "#283f8c"}}>
                     <TextContent textColor={"#cdcdcd"}/>
                     <ImageContent/>
                 </Row>

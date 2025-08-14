@@ -229,7 +229,7 @@ export default class Team extends React.Component {
             <Header title={"Our Team"} imgcss={"team-header-img"}/>
 
             {/*  Page Contents  */}
-            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+            <Container fluid="true" className="section" style={{background: "#283f8c"}}>
                 {/*  Dropdown Menu  */}
                 <Col style={{justifyContent: "center"}}>
                     <Dropdown onSelect={

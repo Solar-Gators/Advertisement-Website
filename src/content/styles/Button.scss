@@ -7,6 +7,32 @@ $button-height: 50px;
 $small-button-height: 35px;
 $square-button-height-width: 40px;
 
+.sponsor-us-btn {
+  font-family: 'Inter';
+  font-weight: 525;
+  font-size: 18px;
+  width: 180px;
+  height: $button-height;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: white;
+  background: linear-gradient(to bottom right, #283f8c, #ff543a);
+  border: 3px solid white;
+  border-radius: $curve;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0;
+}
+
 .btn-primary {
   font-family: 'Inter';
   font-weight: 525;

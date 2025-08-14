@@ -147,7 +147,7 @@ export default function Home() {
                   imgcss={"home-header-img"}/>
 
           {/* Awards */}
-          <Container fluid="true" className="section" style={{background: "#00203E"}}>
+          <Container fluid="true" className="section" style={{background: "#283f8c"}}>
               <Row className={"fsgp-row"}>
                   <h2>
                       Solar Gators Victory!
@@ -173,7 +173,7 @@ export default function Home() {
           <CarsSection mobileView={mobileView}/>
 
           {/*  Team Section */}
-          <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
+          <Container fluid="true" className="section" style={{backgroundColor: '#283f8c'}}>
               <Link id={"link"} to={"/team"} onClick={() => {window.scroll(0,0);}} >
                   <h2>Meet The Team</h2>
                   {/* Slide Animation */}
