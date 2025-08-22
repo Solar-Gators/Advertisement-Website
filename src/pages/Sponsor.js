@@ -146,7 +146,7 @@ export default function Sponsor() {
             <Header title={"Our Sponsors"} imgcss={"sponsor-header-img"}/>
 
             {/*  Sponsorship Blurb */}
-            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+            <Container fluid="true" className="section" style={{background: "#283f8c"}}>
                 <Row className="no-margin-padding" style={{justifyContent: "center"}}>
                     <p className={"body-text-white"} style={{textAlign: "center"}}>
                         Our mission to show the potential of solar energy is made possible by our wonderful sponsors.

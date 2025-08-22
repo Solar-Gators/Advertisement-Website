@@ -1,9 +1,9 @@
 :root {
   /* Define global variables */
-  --color-dark_blue: #00203E;
+  --color-dark_blue: #283f8c;
   --color-primary_blue: #00519C;
-  --color-primary_orange: #F37833;
-  --color-bright_blue: #0067c7;
+  --color-primary_orange: #ff543a;
+  --color-bright_blue: #283f8c;
   --color-white: #F8F8F8;
   --color-light-grey: #cdcdcd;
   --color-grey: #B6BABE;

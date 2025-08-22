@@ -76,7 +76,7 @@ export default function Footer() {
 
                     {/* Email & Mailing Addresses */}
                     <Col className={"column-container"} style={{justifyContent: "end"}}>
-                        <Link style={{color: '#F37833', alignSelf: "flex-end"}} to={"/contact"}>info@ufsolargators.org</Link>
+                        <Link style={{color: 'white', alignSelf: "flex-end"}} to={"/contact"}>info@ufsolargators.org</Link>
                     </Col>
                 </Row>
             </Container>

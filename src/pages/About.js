@@ -104,7 +104,7 @@ export default function About() {
             <SplitSection img={img3} blurb={p3} img_left={false} on_mobile={mobileView} img_above={true}/>
 
             {/* Our Track Record */}
-            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+            <Container fluid="true" className="section" style={{background: "#283f8c"}}>
             <h2>
                 Our Track Record
             </h2>

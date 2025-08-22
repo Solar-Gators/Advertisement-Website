@@ -12,7 +12,7 @@ export default function WebsiteNavbar() {
     function MenuItems ({on_mobile}) {
         let CTAbtn = () => {
             return (
-                <button className="btn-primary" id="nav-btn" onClick={() => { window.location.href = "/donate" }}>
+                <button className="sponsor-us-btn" id="nav-btn" onClick={() => { window.location.href = "/donate" }}>
                     Sponsor Us
                 </button>
             )
