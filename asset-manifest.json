@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc93b755.css",
-    "main.js": "/static/js/main.7449c27e.js",
+    "main.css": "/static/css/main.bc23dd67.css",
+    "main.js": "/static/js/main.8df63bf5.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
@@ -138,11 +138,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.cc93b755.css.map": "/static/css/main.cc93b755.css.map",
-    "main.7449c27e.js.map": "/static/js/main.7449c27e.js.map"
+    "main.bc23dd67.css.map": "/static/css/main.bc23dd67.css.map",
+    "main.8df63bf5.js.map": "/static/js/main.8df63bf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc93b755.css",
-    "static/js/main.7449c27e.js"
+    "static/css/main.bc23dd67.css",
+    "static/js/main.8df63bf5.js"
   ]
 }
