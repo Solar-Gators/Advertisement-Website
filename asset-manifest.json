@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.622c7933.css",
-    "main.js": "/static/js/main.68a08f7c.js",
+    "main.js": "/static/js/main.a21b02d7.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
@@ -47,6 +47,7 @@
     "static/media/SolarArrayLead24.JPG": "/static/media/SolarArrayLead24.fc5c1d9490e783fc7e85.JPG",
     "static/media/secretary24.JPG": "/static/media/secretary24.fc5c1d9490e783fc7e85.JPG",
     "static/media/integPM242.JPG": "/static/media/integPM242.b18eaa9d8cf0c0826480.JPG",
+    "static/media/SG25_Pit_Exit.jpg": "/static/media/SG25_Pit_Exit.c3b2edd67ea2776ac855.jpg",
     "static/media/brakes23.JPG": "/static/media/brakes23.72ed8a68a8834d486e11.JPG",
     "static/media/integPM231.JPG": "/static/media/integPM231.34e38398793692937bc0.JPG",
     "static/media/business23.JPG": "/static/media/business23.1cf7207cb3bde634cc15.JPG",
@@ -107,7 +108,6 @@
     "static/media/ExtremeCanopy.png": "/static/media/ExtremeCanopy.7c5311674294bd50328c.png",
     "static/media/instagram_logo.png": "/static/media/instagram_logo.8ab34323450b8562ca4d.png",
     "static/media/PhoenixThermal.png": "/static/media/PhoenixThermal.1ca8cbafd46f646077b0.png",
-    "static/media/SG25_Flare_Charging.jpeg": "/static/media/SG25_Flare_Charging.ea7bfdbb1f0fd7b783cc.jpeg",
     "static/media/secretary19.JPG": "/static/media/secretary19.b8996c70a53ee4baebea.JPG",
     "static/media/business19.JPG": "/static/media/business19.5f5cf3ed240dda042ed5.JPG",
     "static/media/treasurer19.JPG": "/static/media/treasurer19.b4252993ee67f7977b5c.JPG",
@@ -140,10 +140,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.622c7933.css.map": "/static/css/main.622c7933.css.map",
-    "main.68a08f7c.js.map": "/static/js/main.68a08f7c.js.map"
+    "main.a21b02d7.js.map": "/static/js/main.a21b02d7.js.map"
   },
   "entrypoints": [
     "static/css/main.622c7933.css",
-    "static/js/main.68a08f7c.js"
+    "static/js/main.a21b02d7.js"
   ]
 }
