@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.622c7933.css",
-    "main.js": "/static/js/main.fba687bb.js",
+    "main.js": "/static/js/main.68a08f7c.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
@@ -107,6 +107,7 @@
     "static/media/ExtremeCanopy.png": "/static/media/ExtremeCanopy.7c5311674294bd50328c.png",
     "static/media/instagram_logo.png": "/static/media/instagram_logo.8ab34323450b8562ca4d.png",
     "static/media/PhoenixThermal.png": "/static/media/PhoenixThermal.1ca8cbafd46f646077b0.png",
+    "static/media/SG25_Flare_Charging.jpeg": "/static/media/SG25_Flare_Charging.ea7bfdbb1f0fd7b783cc.jpeg",
     "static/media/secretary19.JPG": "/static/media/secretary19.b8996c70a53ee4baebea.JPG",
     "static/media/business19.JPG": "/static/media/business19.5f5cf3ed240dda042ed5.JPG",
     "static/media/treasurer19.JPG": "/static/media/treasurer19.b4252993ee67f7977b5c.JPG",
@@ -139,10 +140,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.622c7933.css.map": "/static/css/main.622c7933.css.map",
-    "main.fba687bb.js.map": "/static/js/main.fba687bb.js.map"
+    "main.68a08f7c.js.map": "/static/js/main.68a08f7c.js.map"
   },
   "entrypoints": [
     "static/css/main.622c7933.css",
-    "static/js/main.fba687bb.js"
+    "static/js/main.68a08f7c.js"
   ]
 }
