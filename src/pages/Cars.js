@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import torch from "../content/assets/images/car_pics/Torch/torch_ontrack_clean.jpg";
 import sunrider from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
 import cielo from "../content/assets/images/car_pics/Cielo/IMG_9011_crop.JPG";
+import flare from "../content/assets/images/car_pics/Flare/SG25_Flare_Charging.jpeg";
 
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
@@ -90,6 +91,11 @@ export default function Cars() {
         <React.Fragment>
             {/*  Page Header */}
             <Header title={"Our Cars"} imgcss={"cars-header-img"}/>
+
+            {/* Flare */}
+            <SplitSection name={"Flare"} year1={"2025"} year2={"Present"} img={flare} pic_side={"left"}
+                          blurb={"Our fourth generation solar car began development in the Spring of 2023. Throughout the design process, our experience at the 2024 American Solar Challenge greatly drove our desire for making a car that could compete with the very best solar car teams. Flare was manufactured throughout the 2024-2025 school year 100% by students at the University of Florida with zero outsourcing of parts. Boasting a brand new aerobody, monocoque chassis, double wishbone front suspension and a custom battery management system, Flare entered the solar racing scene at the 2025 Formula Sun Grand Prix. Flare had the best debut of any Solar Gators car, covering ~470 miles its first ever race. Flare set the fastest lap at the track in 2025, averaging 43.77 miles per hours around the 3.15 mile track at the National Corvette Museum track in Bowling Green, Kentucky. Flare will attend the 2026 Formula Sun Grand Prix and American Solar Challenge with some brand new upgrades!"}
+                          on_mobile={mobileView}/>
 
             {/* Sunrider */}
             <SplitSection name={"Sunrider"} year1={"2020"} year2={"2024"} img={sunrider} pic_side={"right"}
