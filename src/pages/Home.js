@@ -153,7 +153,7 @@ export default function Home() {
                       Solar Gators Victory!
                   </h2>
               </Row>
-              <Carousel showDots={true} responsive={responsive} autoPlay={true}  autoPlaySpeed={3000}  infinite={true}  >
+              <Carousel showDots={true} responsive={responsive} autoPlay={true}  autoPlaySpeed={8000}  infinite={true}  >
                 {AwardList.map((award) => (
                     <div className='award-card' key={award.id}>
                         <img className="award-card-image" src={award.award_image} alt={award.alt}/>
