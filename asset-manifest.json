@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.622c7933.css",
-    "main.js": "/static/js/main.c30f1640.js",
+    "main.css": "/static/css/main.60241a69.css",
+    "main.js": "/static/js/main.f04ccca7.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
@@ -9,6 +9,7 @@
     "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
     "static/media/auxilary21.jpg": "/static/media/auxilary21.79c83b65572917d65823.jpg",
     "static/media/IMG_9219.JPG": "/static/media/IMG_9219.6763e7fddd5d4d81fd2f.JPG",
+    "static/media/stratlead25.jpg": "/static/media/stratlead25.745abe5d14500f0fbc47.jpg",
     "static/media/car3_fl_gators.JPG": "/static/media/car3_fl_gators.595fecf1dd42db851053.JPG",
     "static/media/team0.JPG": "/static/media/team0.6b1a692a17b194539670.JPG",
     "static/media/torch_ontrack_clean.jpg": "/static/media/torch_ontrack_clean.5c4cc5cf70ad32de0256.jpg",
@@ -17,8 +18,23 @@
     "static/media/victory0_crop_edit.jpg": "/static/media/victory0_crop_edit.cf826fbd998ac8e8d912.jpg",
     "static/media/car3.jpg": "/static/media/car3.bba656c826254c5a925e.jpg",
     "static/media/IMG_9011_crop.JPG": "/static/media/IMG_9011_crop.32e037eb2376a6ab3f60.JPG",
+    "static/media/Cockpit_lead.JPG": "/static/media/Cockpit_lead.fdcb39e0d97740abbf8c.JPG",
+    "static/media/Business_Coordinator.JPG": "/static/media/Business_Coordinator.504392f316c82ce0ce04.JPG",
+    "static/media/Structures_Lead.JPG": "/static/media/Structures_Lead.13be205ac74c96c40a78.JPG",
+    "static/media/Mech_CE_Trevor.JPG": "/static/media/Mech_CE_Trevor.4fc7f18a7cba8e0fd2c7.JPG",
+    "static/media/Secretary.JPG": "/static/media/Secretary.6840b5d289cffb7a9980.JPG",
+    "static/media/President.JPG": "/static/media/President.40211e560ac1eca17381.JPG",
+    "static/media/Vice_President.JPG": "/static/media/Vice_President.2fb29d3707068be33aec.JPG",
+    "static/media/Battery_Pack_Lead.JPG": "/static/media/Battery_Pack_Lead.49951ed56b430cf2b15c.JPG",
+    "static/media/Integration_PM_Jayce.JPG": "/static/media/Integration_PM_Jayce.c5d006616244ac04a940.JPG",
+    "static/media/Suspension_Lead.JPG": "/static/media/Suspension_Lead.9a186e60653d89291b95.JPG",
+    "static/media/Electrical_CE.JPG": "/static/media/Electrical_CE.efb3170df364d9ced465.JPG",
+    "static/media/Treasurer.JPG": "/static/media/Treasurer.d6fe33c190a08a4c8ead.JPG",
     "static/media/Altair24.jpg": "/static/media/Altair24.b731850f16a99010d5bf.jpg",
+    "static/media/Aero_Lead.JPG": "/static/media/Aero_Lead.78c17c568471f342af00.JPG",
+    "static/media/bmslead25.JPG": "/static/media/bmslead25.c8c66e91305a2e10eee8.JPG",
     "static/media/telemetry21.jpg": "/static/media/telemetry21.fa51d460943dc3e4a0cf.jpg",
+    "static/media/Mech_CE_Amit.JPG": "/static/media/Mech_CE_Amit.5c88994873c2c1921531.JPG",
     "static/media/dev23.jpg": "/static/media/dev23.d97bc76216f1caf91ffe.jpg",
     "static/media/secretary22.JPG": "/static/media/secretary22.152b234acaa243176fc9.JPG",
     "static/media/aero22.JPG": "/static/media/aero22.7cb66811cc3c0adc243a.JPG",
@@ -57,6 +73,7 @@
     "static/media/suspension23.JPG": "/static/media/suspension23.110e181d83a77b49ca01.JPG",
     "static/media/batterypack23.JPG": "/static/media/batterypack23.dfe9e1efa75b83f70213.JPG",
     "static/media/vp24.JPG": "/static/media/vp24.76167011c0dd19c20a27.JPG",
+    "static/media/mechint25eli.JPG": "/static/media/mechint25eli.3ffd24523a74ad28fe3f.JPG",
     "static/media/staticPM23.JPG": "/static/media/staticPM23.36e5a76a5824b14c2350.JPG",
     "static/media/chassis23.JPG": "/static/media/chassis23.0935e516890474835e6f.JPG",
     "static/media/aerobody23.JPG": "/static/media/aerobody23.580fcf87efd10192b19f.JPG",
@@ -109,6 +126,7 @@
     "static/media/stratLead24.JPG": "/static/media/stratLead24.3613b978cd95021be4d0.JPG",
     "static/media/ExtremeCanopy.png": "/static/media/ExtremeCanopy.7c5311674294bd50328c.png",
     "static/media/instagram_logo.png": "/static/media/instagram_logo.8ab34323450b8562ca4d.png",
+    "static/media/firmwarelead25.jpg": "/static/media/firmwarelead25.15a64bae29f66b6fd01e.jpg",
     "static/media/PhoenixThermal.png": "/static/media/PhoenixThermal.1ca8cbafd46f646077b0.png",
     "static/media/secretary19.JPG": "/static/media/secretary19.b8996c70a53ee4baebea.JPG",
     "static/media/business19.JPG": "/static/media/business19.5f5cf3ed240dda042ed5.JPG",
@@ -141,11 +159,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.622c7933.css.map": "/static/css/main.622c7933.css.map",
-    "main.c30f1640.js.map": "/static/js/main.c30f1640.js.map"
+    "main.60241a69.css.map": "/static/css/main.60241a69.css.map",
+    "main.f04ccca7.js.map": "/static/js/main.f04ccca7.js.map"
   },
   "entrypoints": [
-    "static/css/main.622c7933.css",
-    "static/js/main.c30f1640.js"
+    "static/css/main.60241a69.css",
+    "static/js/main.f04ccca7.js"
   ]
 }
