@@ -6,6 +6,13 @@ import Dropdown from "react-bootstrap/Dropdown";
 import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev, get_ces} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
 
+//2025-26 Officers: (Names, Positions, Headshots)
+let executive_board25= get_eboard("2025");
+let pms25 = get_pms("2025");
+let ces25 = get_ces("2025")
+let mech_aero25 = get_mech("2025");
+let electrical25 =  get_elec("2025");
+
 //2024-25 Officers: (Names, Positions, Headshots)
 let executive_board24= get_eboard("2024");
 let pms24 = get_pms("2024");
@@ -72,6 +79,10 @@ function AcademicYear({ eventkey }) {
     else if (eventkey === "202425"){
         year1 = 2024
         year2 = 2025
+    }
+    else if (eventkey === "202526"){
+        year1 = 2025
+        year2 = 2026
     }
     return (
         <h5>{year1} - {year2}</h5>
@@ -154,7 +165,20 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
     }
 
     //Switch Academic Year
-    if (eventkey === "202425") {
+    if (eventkey === "202526") {
+        return (
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
+                <OfficersRow heading="Executive Board" officers={executive_board25}/>
+                <OfficersRow heading="Chief Engineers" officers={ces25}/>
+                <OfficersRow heading="Project Managers" officers={pms25}/>
+                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero25}/>
+                <OfficersRow heading="Electrical" officers={electrical25}/>
+                {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
+                {/*<CompList list={competition_team23}/>*/}
+            </Col>
+        )
+    }
+    else if (eventkey === "202425") {
         return (
             <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board24}/>
@@ -215,7 +239,7 @@ export default class Team extends React.Component {
         super(props)
         this.state = {
             executive_board: executive_board23,
-            eventkey: "202425"
+            eventkey: "202526"
         }
     }
 
@@ -264,6 +288,11 @@ export default class Team extends React.Component {
                                     return { executive_board: executive_board24, eventkey: eventKey }
                                 });
                             }
+                            if (eventKey === "202526") {
+                                this.setState((state) => {
+                                    return { executive_board: executive_board25, eventkey: eventKey }
+                                });
+                            }
                         }}
                     >
                         <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
@@ -277,6 +306,7 @@ export default class Team extends React.Component {
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202223">2022 - 2023</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202324">2023 - 2024</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202425">2024 - 2025</Dropdown.Item>
+                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202526">2025 - 2026</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
               </Col>

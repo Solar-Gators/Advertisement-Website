@@ -1,5 +1,10 @@
 // OFFICER PICTURES -----------------------------
 
+// 2025-26
+import { president25, vicepresident25, treasurer25, secretary25, business25, mechPM250, mechPM251,  electricalPM25, 
+    integrationPM250, integrationPM251, stratLead25, aerobodyLead25, cockpitLead25, batteryPackLead25, bMSLead25, firmwareLead25, solarArrayLead25, structuresLead25, suspensionLead25
+} from './2025/index'
+
 // 2024-25
 import { president24, vicepresident24, treasurer24, secretary24, business24, mechPM240, mechPM241,  electricalPM24, 
     integrationPM240, integrationPM241, integrationPM242, integrationPM243, stratLead24, aerobodyLead24, auxiliaryLead24, batteryPackLead24, bMSLead24, brakesLead24, firmwareLead24, solarArrayLead24, structuresLead24, suspensionLead24, telemetryLead24
@@ -25,6 +30,30 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 
 
 // OFFICER LISTS -----------------------------
+
+//2025-26: (Names, Positions,Headshot)
+let executive_board25 = [["Connor Ellis", "President", president25],
+    ["Chelsea Catabia", "Vice President", vicepresident25],
+    ["Noah Murphy", "Treasurer", treasurer25],
+    ["Natalia Oliver Sampaio", "Secretary", secretary25],
+    ["Dakota Rosher", "Business Coordinator", business25]];
+let ces25 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM250],
+    ["Trevor Bendik", "Mechanical Chief Engineer", mechPM251],
+    ["Nathan Achinger", "Electrical Chief Engineer", electricalPM25]];
+let pms25 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM250],
+    ["Jayce McMillan", "Electrical Integration PM", integrationPM251]];
+let electrical25 = [
+    ["Joshua Kwak", "BMS", bMSLead25],
+    ["Justin Lopez", "Firmware", firmwareLead25],
+    ["Bradley Cedarholm", "Strategy", stratLead25]];
+let mech_aero25= [
+    ["Griffin York", "Aerobody", aerobodyLead25],
+    ["Diego Olivo", "Battery Pack", batteryPackLead25],
+    ["George Shearer", "Cockpit", cockpitLead25],
+    ["Callie Monville", "Structures", structuresLead25],
+    ["Austin Stang", "Suspension", suspensionLead25]
+
+];
 
 //2024-25: (Names, Positions,Headshot)
 let executive_board24 = [["William Tran", "President", president24],
@@ -149,6 +178,7 @@ export const get_eboard = (year) => {
     else if (year === "2022") { return executive_board22; }
     else if (year === "2023") { return executive_board23; }
     else if (year === "2024") { return executive_board24; }
+    else if (year === "2025") { return executive_board25; }
     else { return ""; }
 }
 
@@ -159,11 +189,13 @@ export const get_pms = (year) => {
     else if (year === "2022") { return pms22; }
     else if (year === "2023") { return pms23; }
     else if (year === "2024") { return pms24;}
+    else if (year === "2025") { return pms25;}
     else { return ""; }
 }
 
 export const get_ces = (year) => {
     if (year === "2024") { return ces24;}
+    else if (year === "2025") { return ces25}
     else { return ""; }
 }
 
@@ -172,6 +204,7 @@ export const get_mech = (year) => {
     else if (year === "2022") { return mech_aero22; }
     else if (year === "2023") { return mech_aero23; }
     else if (year === "2024") { return mech_aero24; }
+    else if (year === "2025") { return mech_aero25; }
     else { return ""; }
 }
 
@@ -180,6 +213,7 @@ export const get_elec = (year) => {
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
     else if (year === "2024") { return electrical24; }
+    else if (year === "2025") { return electrical25; }
     else { return ""; }
 }
 

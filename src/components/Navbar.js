@@ -3,6 +3,7 @@ import logoImage from '../content/assets/images/logo2.png'
 import { Link } from "react-router-dom";
 import {Nav, Navbar} from "react-bootstrap";
 import '../content/styles/Button.scss'
+import '../content/styles/NavBar.scss'
 
 
 export default function WebsiteNavbar() {
@@ -52,7 +53,7 @@ export default function WebsiteNavbar() {
                     <Nav className="mr-auto" navbar style={{textAlign: "center"}}>
                         <PageTabs/>
                     </Nav>
-                    <div style={{display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
+                    <div style={{marginLeft: "auto", marginRight: "20px", justifyContent: "flex-end", alignItems: "center"}}>
                         <CTAbtn/>
                     </div>
                 </>
