@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.60241a69.css",
-    "main.js": "/static/js/main.f04ccca7.js",
+    "main.css": "/static/css/main.c5f5570b.css",
+    "main.js": "/static/js/main.f0e91b6f.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
@@ -110,12 +110,14 @@
     "static/media/Inter-VariableFont.woff2": "/static/media/Inter-VariableFont.b2b32f7882156658c072.woff2",
     "static/media/people_sunrider0.jpeg": "/static/media/people_sunrider0.0d212fc7164e1a06882d.jpeg",
     "static/media/sponsorship0.jpeg": "/static/media/sponsorship0.18b9fa95953de76ac9a1.jpeg",
+    "static/media/Digikey Logo.jpg": "/static/media/Digikey Logo.65be1494ef09735d4864.jpg",
     "static/media/business20.JPG": "/static/media/business20.22bdc7e90c54477f5d79.JPG",
     "static/media/power21.JPG": "/static/media/power21.22bdc7e90c54477f5d79.JPG",
     "static/media/secretary20.png": "/static/media/secretary20.4ca29e1d7125701b5e3a.png",
     "static/media/vp21.png": "/static/media/vp21.4ca29e1d7125701b5e3a.png",
     "static/media/chassis21.jpg": "/static/media/chassis21.d6181e3ae09f003ecb60.jpg",
     "static/media/CytecSolvay.png": "/static/media/CytecSolvay.eea6dcbf7bc83b6300c3.png",
+    "static/media/Scuba Steve Logo.png": "/static/media/Scuba Steve Logo.54501bff407799722113.png",
     "static/media/secretary21.jpg": "/static/media/secretary21.5c176550e3fafe18267d.jpg",
     "static/media/FGCI.png": "/static/media/FGCI.acc92e3291468927cdbd.png",
     "static/media/solararray21.jpg": "/static/media/solararray21.2f892e4b94eb7444ff2f.jpg",
@@ -129,6 +131,7 @@
     "static/media/firmwarelead25.jpg": "/static/media/firmwarelead25.15a64bae29f66b6fd01e.jpg",
     "static/media/PhoenixThermal.png": "/static/media/PhoenixThermal.1ca8cbafd46f646077b0.png",
     "static/media/secretary19.JPG": "/static/media/secretary19.b8996c70a53ee4baebea.JPG",
+    "static/media/Segger Logo.png": "/static/media/Segger Logo.484ecad718afa0006d8b.png",
     "static/media/business19.JPG": "/static/media/business19.5f5cf3ed240dda042ed5.JPG",
     "static/media/treasurer19.JPG": "/static/media/treasurer19.b4252993ee67f7977b5c.JPG",
     "static/media/president19.JPG": "/static/media/president19.c3b88f3c3c1e852896ba.JPG",
@@ -139,9 +142,11 @@
     "static/media/facebook_logo0.png": "/static/media/facebook_logo0.7ddd5f1f6916af910777.png",
     "static/media/youtube_logo0.png": "/static/media/youtube_logo0.d425224b05da2bf69d01.png",
     "static/media/MerrittSupply.png": "/static/media/MerrittSupply.f0d0a6004103a14f2e4d.png",
+    "static/media/Towing Cash Calls Logo.png": "/static/media/Towing Cash Calls Logo.3349b720de32ed3e679e.png",
     "static/media/Mathworks.png": "/static/media/Mathworks.f8a47c4f51793fd98787.png",
     "static/media/linkedin_logo copy.png": "/static/media/linkedin_logo copy.45565e16930dbc203f91.png",
     "static/media/logo2.png": "/static/media/logo2.178ffe838591f9c8d972.png",
+    "static/media/Altair.png": "/static/media/Altair.cd73fbf42c2632ec588b.png",
     "static/media/Signarama.png": "/static/media/Signarama.8934cf37ac4118d90a74.png",
     "static/media/Bridgestone.png": "/static/media/Bridgestone.3ded07ae4e5a30a0031b.png",
     "static/media/RoyalElements.png": "/static/media/RoyalElements.306ace973fce39aff8cf.png",
@@ -150,6 +155,7 @@
     "static/media/FusionFilaments.png": "/static/media/FusionFilaments.af5b6d61b6a75c79b3ff.png",
     "static/media/MAE.png": "/static/media/MAE.fe9ebbdcae0aca6d660a.png",
     "static/media/ECE.png": "/static/media/ECE.fae6d0917e9da3443347.png",
+    "static/media/Siemens.png": "/static/media/Siemens.c86cc0b97774e6909977.png",
     "static/media/SolidWorks.png": "/static/media/SolidWorks.b0d5777dc9da7f99f6df.png",
     "static/media/ElektroAutomatik.png": "/static/media/ElektroAutomatik.04196a31109bc6f006aa.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -159,11 +165,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.60241a69.css.map": "/static/css/main.60241a69.css.map",
-    "main.f04ccca7.js.map": "/static/js/main.f04ccca7.js.map"
+    "main.c5f5570b.css.map": "/static/css/main.c5f5570b.css.map",
+    "main.f0e91b6f.js.map": "/static/js/main.f0e91b6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.60241a69.css",
-    "static/js/main.f04ccca7.js"
+    "static/css/main.c5f5570b.css",
+    "static/js/main.f0e91b6f.js"
   ]
 }
