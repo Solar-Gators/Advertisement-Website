@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 import Dropdown from "react-bootstrap/Dropdown";
 import Button from "react-bootstrap/Button";
 import Header from "../components/Header";
+import '../content/styles/Sponsors.scss'
 
 //Car 3 Sponsors - 2D Array [[logo, website link],...]
 let platinum3 = get_platinum_sponsors("3");
@@ -27,38 +28,27 @@ let patron4 = get_patrons("4");
 
 
 function SponsorRow({ list, tier }) {
-    let Logo = ({sponsor}) => {
-        if (tier === "patron") {
-            return (
-                <h6 id={tier}>{sponsor}</h6>
-            )
-
-        }
-        else {
-            return (
-                <a href={sponsor[1]}>
-                    <span className="align-center">
-                        <img src={sponsor[0]} className="sponsor-logo" id={tier}/>
-                    </span>
-                </a>
-            )
-        }
-    }
-
-    let SponsorLoop = () => {
-        return (
-            list.map((sponsor, index) => (
-                <Logo key={index} sponsor={sponsor}/>
-            ))
-        )
-    }
-
     return (
-        <Row className="no-margin-padding" id={"sponsor-row"}>
-            <SponsorLoop/>
-        </Row>
-    )
+        <div id="sponsor-row">
+            {list.map((sponsor, index) => {
+                if (tier === "patron") {
+                    return (
+                        <h6 key={index} className="sponsor-item" id={tier}>
+                            {sponsor}
+                        </h6>
+                    );
+                } else {
+                    return (
+                        <a key={index} href={sponsor[1]} className="sponsor-item">
+                            <img src={sponsor[0]} className="sponsor-logo" id={tier} />
+                        </a>
+                    );
+                }
+            })}
+        </div>
+    );
 }
+
 
 function ShowSponsors({car_num}) {
     if (car_num === "3") {
@@ -125,8 +115,8 @@ function ShowSponsors({car_num}) {
 }
 
 export default function Sponsor() {
-    const [carNum, setCarNum] = useState("3");
-    const [carName, setCarName] = useState("Sunrider");
+    const [carNum, setCarNum] = useState("4");
+    const [carName, setCarName] = useState("Flare");
 
     //react hook functions
     function SetCar() {
@@ -161,18 +151,18 @@ export default function Sponsor() {
 
                 {/* MARIA This is temporarily commented out.
                     Uncomment out once Car 4 sponsors are completed */}
-                {/*<Col style={{justifyContent: "center", marginBottom: "10vw"}}>*/}
-                {/*    <Dropdown onSelect={(car) => SetCar()}>*/}
-                {/*        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>*/}
-                {/*            <h5 id={"sponsor-dropdown-h5"}>Car {carNum} - {carName}</h5>*/}
-                {/*        </Dropdown.Toggle>*/}
+                <Col style={{justifyContent: "center", marginBottom: "10vw"}}>
+                    <Dropdown onSelect={(car) => SetCar()}>
+                        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
+                          <h5 id={"sponsor-dropdown-h5"}>Car {carNum} - {carName}</h5>
+                            </Dropdown.Toggle>
 
-                {/*        <Dropdown.Menu className="dropdown-menu">*/}
-                {/*            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="3">Car 3 - Sunrider</Dropdown.Item>*/}
-                {/*            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="4">Car 4 - Flare</Dropdown.Item>*/}
-                {/*        </Dropdown.Menu>*/}
-                {/*    </Dropdown>*/}
-                {/*</Col>*/}
+                       <Dropdown.Menu className="dropdown-menu">
+                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="3">Car 3 - Sunrider</Dropdown.Item>
+                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="4">Car 4 - Flare</Dropdown.Item>
+                        </Dropdown.Menu>
+                   </Dropdown>
+                </Col>
 
                 {/*Display Sponsor Logos*/}
                 <ShowSponsors car_num={carNum}/>

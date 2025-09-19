@@ -19,22 +19,28 @@
 }
 
 #sponsor-row {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    overflow-wrap: normal;
-    gap: 2vw;
-    margin: 2rem;
+    justify-content: space-evenly;  /* space logos evenly across the row */
+    align-items: center;
+    gap: 2rem;                       /* space between logos or names */
+    margin: 2rem 0;
+    width: 100%;
 }
 
-.sponsor-logo{
-    max-width: 18vw;
-    width: auto;
-    height: auto;
-    padding: 0;
-    justify-self: center;
+.sponsor-item {
+    display: flex;                   /* makes it shrink to content and not full width */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.sponsor-logo {
+    max-width: 18vw;
+    height: auto;
+}
+
+
 
 #platinum {
     margin: 0 2vw;

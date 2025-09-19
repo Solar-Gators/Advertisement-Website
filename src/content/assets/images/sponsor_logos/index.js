@@ -31,11 +31,12 @@
 // var silver2 = [BayArea, IPPD, Rohacell, Mirage, FGCI, UFSG, Brembo, Accurate];
 // var bronze2 = [TDK, Zevia, Stickermule, SolarCat, Kevins, MossSolar, BMRS, BeadBuster, Hakko];
 
-//Car 3 Sponsor Logos:
+//Car Sponsor Logos:
 //Platinum
 import MAE from './MAE.png'
 import ZenithTecnica from './ZenithTecnica.png'
-import ECE from './ECE.png'
+import BateMo from './Batemo Logo.png'
+import scubasteve from './Scuba Steve Logo.png'
 //Gold
 import MatrixComposities from './Matrix.png'
 import ElektroAutomatik from './ElektroAutomatik.png'
@@ -43,8 +44,10 @@ import WestSystems from './WestSystem.png'
 import Bridgestone from './Bridgestone.png'
 import Solidworks from './SolidWorks.png'
 import RoyalElements from './RoyalElements.png'
+import Altair from './Altair.png'
 //Silver
 import Mirage from './Mirage.png'
+import ECE from './ECE.png'
 import RapidCut from './RapidCut.png'
 import BMRS from './Bmrs.png'
 import Molex from './Molex.png'
@@ -53,6 +56,7 @@ import Cytec from './CytecSolvay.png'
 import Signarama from './Signarama.png'
 import Mathworks from './Mathworks.png'
 import Lowes from './Lowes.png'
+import segger from './Segger Logo.png'
 //Bronze
 import MerritSupply from './MerrittSupply.png'
 import SKF from './SKF.png'
@@ -70,10 +74,23 @@ import Spirpol from './Spirol.png'
 import CustomDynamics from './CustomDynamics.png'
 import ExtremeCanopy from './ExtremeCanopy.png'
 import Actisense from './Actisense.png'
+import Digikey from './Digikey Logo.jpg'
+import Haas from './HAAS Foundation Logo.png'
+import towingcashcalls from './Towing Cash Calls Logo.png'
+import walmart from './Walmart Logo.png'
+import sandia from './Sandia National Laboratories Logo.png'
+import blueorigin from './Blue Origin Logo.png'
+import lutron from './Lutron Logo.png'
 //Valued
 import Coilcraft from './Coilcraft.png'
 import TexasInstruments from './TexasInstruments.png'
 import STMicroelectronics from './STMicroelectronics.png'
+import siemens from './Siemens.png'
+import element29 from './Element 29 Logo.png'
+import californiafilaments from './California Filaments Logo.png'
+import Diab from './Diab Logo.jpeg'
+import tilton from './Tilton Logo.jpeg'
+
 
 //Car 3 Sponsors - Sorted by tier in 2D array: [logo, website link]
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
@@ -91,12 +108,12 @@ let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "
 let valued3 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"]];
 
 //Car 4 Sponsors [logo, website link]
-let platinum4 = [[]];
-let gold4 = [[]];
-let silver4 = [[SKF, "https://www.skf.com"]];
-let bronze4 = [[Actisense, "https://actisense.com/"]];
-let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"]];
-let patron4 = ["Chenard", "Werner", "Alderman", "Shaw", "Schedel", "Smith", "Shen", "Nett", "Indigo Strategic Consulting", "Poly Plus Battery Co.", "Towing Cash Calls", "Advantek Engineering Inc.", "Blue Origin", "Sandia National Laboratories",
+let platinum4 = [[MAE, "http://mae.ufl.edu/"], [scubasteve], [BateMo, "https://www.batemo.com/"]];
+let gold4 = [[Altair, "https://altair.com/"], [RoyalElements, "https://royal-elements.com/"]];
+let silver4 = [[ECE, "https://www.ece.ufl.edu/"], [segger, "https://www.segger.com/"]];
+let bronze4 = [[SKF, "https://www.skf.com/us"], [Digikey, "https://www.digikey.com/"], [lutron, "https://www.lutron.com/us/en"]];
+let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"], [VR3, "https://vr3.ca/"], [siemens, "https://www.siemens.com/"], [element29], [californiafilaments, "https://californiafilament.com/"], [FusionFilaments, "https://www.fusionfilaments.com/"], [Diab, "https://www.diabgroup.com/"], [tilton, "https://tiltonracing.com/"]];
+let patron4 = ["Joelen and Bob Merkel", "Nelms", "Chenard", "Werner", "Alderman", "Shaw", "Schedel", "Smith", "Shen", "Nett", "Indigo Strategic Consulting", "Poly Plus Battery Co.", "Towing Cash Calls", "Advantek Engineering Inc.", "Blue Origin", "Sandia National Laboratories",
     "Wal-Mart Stores, Inc.", "Gene Haas Foundation"];
 
 // GET FUNCTIONS -----------------------------

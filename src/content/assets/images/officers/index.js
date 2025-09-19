@@ -40,8 +40,8 @@ let executive_board25 = [["Connor Ellis", "President", president25],
 let ces25 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM250],
     ["Trevor Bendik", "Mechanical Chief Engineer", mechPM251],
     ["Nathan Achinger", "Electrical Chief Engineer", electricalPM25]];
-let pms25 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM250],
-    ["Jayce McMillan", "Electrical Integration PM", integrationPM251]];
+let pms25 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM251],
+    ["Jayce McMillan", "Electrical Integration PM", integrationPM250]];
 let electrical25 = [
     ["Joshua Kwak", "BMS", bMSLead25],
     ["Justin Lopez", "Firmware", firmwareLead25],

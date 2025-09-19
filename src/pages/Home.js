@@ -17,16 +17,18 @@ import fsgp23 from "../content/assets/images/people/team22/victory0_crop_edit.jp
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
+import scubasteve from "../content/assets/images/sponsor_logos/Scuba Steve Logo.png"
+import Batemo from "../content/assets/images/sponsor_logos/Batemo Logo.png"
 
 //2024-25 Officers: (Names, Positions, Headshot)
-let executive_board = get_eboard("2024");
-let pms = get_pms("2024");
-let mech_aero = get_mech("2024");
-let electrical =  get_elec("2024");
-let chief_engineers = get_ces("2024");
+let executive_board = get_eboard("2025");
+let pms = get_pms("2025");
+let mech_aero = get_mech("2025");
+let electrical =  get_elec("2025");
+let chief_engineers = get_ces("2025");
 
 //Car 3 Platinum Sponsors
-let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
+let platinum4 = [[MAE, "https://mae.ufl.edu/"], [scubasteve], [Batemo, "https://www.batemo.com/"]];
 
 function Officer({pic}) {
     //creates individual officer headshot container w image
@@ -93,7 +95,7 @@ function SponsorSection ({on_mobile}) {
         return (
             <Col>
                 <Row>
-                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]}/>
+                    <SponsorRow img1={platinum4[0][0]} link1={platinum4[0][1]}/>
                 </Row>
                     <SponsorBlurb/>
                 <Row>
@@ -106,8 +108,8 @@ function SponsorSection ({on_mobile}) {
         return (
             <Row>
                 <Col className={"no-margin-padding"} id="sponsor_logos_half">
-                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}/>
-                    <SponsorRow img1={platinum3[1][0]} link1={platinum3[1][1]}/>
+                    <SponsorRow img1={platinum4[0][0]} link1={platinum4[0][1]} img2={platinum4[2][0]} link2={platinum4[2][1]}/>
+                    <SponsorRow img1={platinum4[1][0]} link1={platinum4[1][1]}/>
                 </Col>
                 <Col className={"no-margin-padding"} id="sponsor_blurb_half">
                     <Container >
@@ -186,20 +188,14 @@ export default function Home() {
                           <Officer pic={executive_board[3][2]}/>
                           <Officer pic={pms[0][2]}/>
                           <Officer pic={pms[1][2]}/>
-                          <Officer pic={pms[2][2]}/>
-                          <Officer pic={pms[3][2]}/>
                           <Officer pic={mech_aero[0][2]}/>
                           <Officer pic={mech_aero[1][2]}/>
                           <Officer pic={mech_aero[2][2]}/>
                           <Officer pic={mech_aero[3][2]}/>
                           <Officer pic={mech_aero[4][2]}/>
-                          <Officer pic={mech_aero[5][2]}/>
                           <Officer pic={electrical[0][2]}/>
                           <Officer pic={electrical[1][2]}/>
                           <Officer pic={electrical[2][2]}/>
-                          <Officer pic={electrical[3][2]}/>
-                          <Officer pic={electrical[4][2]}/>
-                          <Officer pic={electrical[5][2]}/>
                           <Officer pic={chief_engineers[0][2]}/>
                           <Officer pic={chief_engineers[1][2]}/>
                           <Officer pic={chief_engineers[2][2]}/>
