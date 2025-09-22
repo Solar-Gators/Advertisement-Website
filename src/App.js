@@ -15,7 +15,6 @@ import NotFound from './pages/NotFound'
 
 import ReactGA from 'react-ga'
 import { createBrowserHistory } from 'history'
-
 import './App.scss'
 
 ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
