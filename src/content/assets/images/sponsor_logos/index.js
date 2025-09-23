@@ -115,6 +115,7 @@ let bronze4 = [[SKF, "https://www.skf.com/us"], [Digikey, "https://www.digikey.c
 let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"], [VR3, "https://vr3.ca/"], [siemens, "https://www.siemens.com/"], [element29], [californiafilaments, "https://californiafilament.com/"], [FusionFilaments, "https://www.fusionfilaments.com/"], [Diab, "https://www.diabgroup.com/"], [tilton, "https://tiltonracing.com/"]];
 let patron4 = ["Joelen and Bob Merkel", "Nelms", "Chenard", "Werner", "Alderman", "Shaw", "Schedel", "Smith", "Shen", "Nett", "Indigo Strategic Consulting", "Poly Plus Battery Co.", "Towing Cash Calls", "Advantek Engineering Inc.", "Blue Origin", "Sandia National Laboratories",
     "Wal-Mart Stores, Inc.", "Gene Haas Foundation"];
+let solarpatron4 = ["Lutron"];
 
 // GET FUNCTIONS -----------------------------
 export const get_platinum_sponsors = (carNum) => {
@@ -150,4 +151,10 @@ export const get_valued_sponsors = (carNum) => {
 export const get_patrons = (carNum) => {
     if (carNum === "4") { return patron4; }
     else { return ""; }
+}
+
+export const get_solarpatrons = (carNum) => {
+    if (carNum === "4") { return solarpatron4; }
+    else { return ""; }
+
 }

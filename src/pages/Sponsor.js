@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import { useState } from 'react';
-import {get_platinum_sponsors, get_gold_sponsors, get_silver_sponsors, get_bronze_sponsors, get_valued_sponsors, get_patrons} from "../content/assets/images/sponsor_logos/index";
+import {get_platinum_sponsors, get_gold_sponsors, get_silver_sponsors, get_bronze_sponsors, get_valued_sponsors, get_patrons, get_solarpatrons} from "../content/assets/images/sponsor_logos/index";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -25,6 +25,7 @@ let silver4 = get_silver_sponsors("4");
 let bronze4 = get_bronze_sponsors("4");
 let valued4 = get_valued_sponsors("4");
 let patron4 = get_patrons("4");
+let solarpatron4 = get_solarpatrons("4");
 
 
 function SponsorRow({ list, tier }) {
@@ -85,6 +86,10 @@ function ShowSponsors({car_num}) {
                 <h2 style={{paddingBottom: "10px"}}>Flare Sponsors</h2>
                 <h6>2024 - present</h6>
 
+                {/* SOLAR CELL PATRONS */}
+                <h3>Name a Solar Cell Fall 2025 Fundraiser Patrons</h3>
+                <SponsorRow list={solarpatron4} tier={"patron"}/>
+
                 {/* PLATINUM */}
                 <h3 style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
                 <SponsorRow list={platinum4} tier={"platinum"}/>
@@ -106,7 +111,7 @@ function ShowSponsors({car_num}) {
                 <SponsorRow list={valued4} tier={"valued"}/>
 
                 {/* SOLAR CELL PATRONS */}
-                <h3>Solar Cell Patrons</h3>
+                <h3>Thank you to our 2024-2025 Patrons</h3>
                 <SponsorRow list={patron4} tier={"patron"}/>
 
             </div>
