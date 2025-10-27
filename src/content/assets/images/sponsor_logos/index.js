@@ -116,7 +116,7 @@ let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [S
 let patron4 = ["Joelen and Bob Merkel", "Nelms", "Chenard", "Werner", "Alderman", "Shaw", "Schedel", "Smith", "Shen", "Nett", "Indigo Strategic Consulting", "Poly Plus Battery Co.", "Towing Cash Calls", "Advantek Engineering Inc.", "Blue Origin", "Sandia National Laboratories",
     "Wal-Mart Stores, Inc.", "Gene Haas Foundation"];
 let solarpatron4 = [["Matt and Kelly Wright"],["Lutron"],["Christie and Chris Ellis"],["Doug Hann"],["Marcelo Valdez"],["Rick and Karen Sargeant"],["David Murphy"],["Matthew Gish and Michelle Barton"],["Melinda Gish"],["Samuel Breslin"],["Melanie Murphy"],["Brad and Misty Brown"],["Carrie Dugan"],["Pete and Debbie Fowler"],["Pamela Dickrell"],
-                    ["Pearl Sacks"],["Youssef"],["Elijah Baluyot"],["Kenji Sanchez"],["Nicolas Sanchez"],["Anthony Kfoury-Antoun"]];
+                    ["Pearl Sacks"],["Youssef"],["Elijah Baluyot"],["Kenji Sanchez"],["Nicolas Sanchez"],["Anthony Kfoury-Antoun"],["Kurt Smith"]];
 
 // GET FUNCTIONS -----------------------------
 export const get_platinum_sponsors = (carNum) => {

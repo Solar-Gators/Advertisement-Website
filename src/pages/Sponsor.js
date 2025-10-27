@@ -86,10 +86,6 @@ function ShowSponsors({car_num}) {
                 <h2 style={{paddingBottom: "10px"}}>Flare Sponsors</h2>
                 <h6>2024 - present</h6>
 
-                {/* SOLAR CELL PATRONS */}
-                <h3>Name a Solar Cell Fall 2025 Fundraiser Patrons</h3>
-                <SponsorRow list={solarpatron4} tier={"patron"}/>
-
                 {/* PLATINUM */}
                 <h3 style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
                 <SponsorRow list={platinum4} tier={"platinum"}/>
@@ -110,9 +106,13 @@ function ShowSponsors({car_num}) {
                 <h3>Valued Sponsors</h3>
                 <SponsorRow list={valued4} tier={"valued"}/>
 
-                {/* SOLAR CELL PATRONS */}
+                {/* PATRONS */}
                 <h3>Thank you to our 2024-2025 Patrons</h3>
                 <SponsorRow list={patron4} tier={"patron"}/>
+
+                {/* SOLAR CELL PATRONS */}
+                <h3>Name a Solar Cell Fall 2025 Fundraiser Patrons</h3>
+                <SponsorRow list={solarpatron4} tier={"patron"}/>
 
             </div>
         );
