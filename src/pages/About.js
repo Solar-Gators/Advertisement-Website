@@ -7,9 +7,9 @@ import MissionStatements from "../components/MissionStatements/MissionStatements
 import SplitSection from "../components/SplitSection/SplitSection";
 import Header from "../components/Header";
 
-import img1 from '../content/assets/images/people/team21/people_sunrider0.jpeg';
-import img2 from '../content/assets/images/people/team22/outreach1.jpeg';
-import img3 from '../content/assets/images/people/team21/working1.jpeg';
+import img1 from '../content/assets/images/car_pics/Flare/SG25_Top_Open.JPG';
+import img2 from '../content/assets/images/car_pics/Flare/SG25_Installing_Top_Body.JPG';
+import img3 from '../content/assets/images/people/team25/SG25_Pit_Lineup.JPG';
 
 //Blurb Section 1
 let p1 = "Solar Gators is a fully student-run engineering design team at " +
@@ -19,9 +19,9 @@ let p1 = "Solar Gators is a fully student-run engineering design team at " +
     "Each year we proudly represent the Sunshine State in the Formula Sun Grand Prix (FSGP)."
 
 //Blurb Section 2
-let p2a = "We're the new kids on the solar racing track, but don't let our age fool you. " +
-    "In just six years, we've quickly made a name for ourselves in the world of solar racing, " +
-    "proving that innovation and determination can overcome any obstacle."
+let p2a = "With nearly a decade of innovation behind us and multiple competition wins under our belt, " +
+    "we've solidified our place in the solar car world. Our journey proves that a team run on " +
+    "commitment, creativity, and innovation can overcome any obstacle."
 
 let p2b = "As a team of passionate engineers, we work tirelessly to achieve our goals. " +
     "From the initial design phase to the final race day, we're committed to excellence " +
@@ -35,7 +35,7 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
     "resources they need to become better engineers and better people. Join us as we " +
     "push the limits of what's possible in solar racing and beyond."
 
-function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6}) {
+function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6, blurb7, blurb8}) {
     let Text = ({blurb}) => {
         return (
             <ol className="no-margin-padding" style={{listStyleType: 'square', marginLeft: "5vw"}}>
@@ -54,6 +54,8 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6}
                     <Text blurb={blurb4}/>
                     <Text blurb={blurb5}/>
                     <Text blurb={blurb6}/>
+                    <Text blurb={blurb7}/>
+                    <Text blurb={blurb8}/>
                 </Col>
             </Row>
         )
@@ -66,6 +68,7 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6}
                         <Text blurb={blurb1}/>
                         <Text blurb={blurb2}/>
                         <Text blurb={blurb5}/>
+                        <Text blurb={blurb7}/>
                     </Row>
                 </Col>
                 <Col className={"mission-statement"}>
@@ -73,6 +76,7 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6}
                         <Text blurb={blurb3}/>
                         <Text blurb={blurb4}/>
                         <Text blurb={blurb6}/>
+                        <Text blurb={blurb8}/>
                     </Row>
                 </Col>
             </Row>
@@ -112,10 +116,12 @@ export default function About() {
                     on_mobile={mobileView}
                     blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track"
                     blurb2="Competed in the Formula Sun Grand Prix six times since 2016"
-                    blurb3="Designed and manufactured 3 solar cars from the ground up"
-                    blurb4="100% student run"
+                    blurb3="Won fastest lap at the 2025 FSGP"
+                    blurb4="Won 1st place in the Mathworks competition at the 2025 Formula Sun Grand Prix"
                     blurb5="Secured a spot in the 2024 American Solar Challenge (ASC)"
                     blurb6="Won the 2024 Altair Challenge and a grand prize of $10,000, by achieving an overall weight reduction of 81%"
+                    blurb7="Designed and manufactured 4 solar cars from the ground up"
+                    blurb8="100% student run"
                 />
             </Container>
 
