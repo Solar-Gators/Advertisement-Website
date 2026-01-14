@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.45d7f54e.css",
-    "main.js": "/static/js/main.bf628b00.js",
+    "main.css": "/static/css/main.79016fd5.css",
+    "main.js": "/static/js/main.7263054f.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
     "static/media/SG25_Flare.jpg": "/static/media/SG25_Flare.f419371d48601d99c367.jpg",
+    "static/media/SG25_Installing_Top_Body.JPG": "/static/media/SG25_Installing_Top_Body.7fcd830ea39c315da004.JPG",
+    "static/media/SG25_Top_Open.JPG": "/static/media/SG25_Top_Open.dc3fc70587802f78ab70.JPG",
+    "static/media/SG25_Pit_Lineup.JPG": "/static/media/SG25_Pit_Lineup.80de5658ebc74648559c.JPG",
     "static/media/stratLead23.JPG": "/static/media/stratLead23.33d0b2d85a144e49b2d2.JPG",
     "static/media/auxilary21.jpg": "/static/media/auxilary21.79c83b65572917d65823.jpg",
     "static/media/IMG_9219.JPG": "/static/media/IMG_9219.6763e7fddd5d4d81fd2f.JPG",
@@ -30,6 +33,7 @@
     "static/media/Integration_PM_Jayce.JPG": "/static/media/Integration_PM_Jayce.c5d006616244ac04a940.JPG",
     "static/media/Suspension_Lead.JPG": "/static/media/Suspension_Lead.9a186e60653d89291b95.JPG",
     "static/media/Electrical_CE.JPG": "/static/media/Electrical_CE.efb3170df364d9ced465.JPG",
+    "static/media/SG25_Dynamics.JPG": "/static/media/SG25_Dynamics.625b6e22e855e7c785e9.JPG",
     "static/media/Treasurer.JPG": "/static/media/Treasurer.d6fe33c190a08a4c8ead.JPG",
     "static/media/Altair24.jpg": "/static/media/Altair24.b731850f16a99010d5bf.jpg",
     "static/media/Aero_Lead.JPG": "/static/media/Aero_Lead.78c17c568471f342af00.JPG",
@@ -56,7 +60,6 @@
     "static/media/vp22.JPG": "/static/media/vp22.c25e256dcd94d1dadea2.JPG",
     "static/media/business22.JPG": "/static/media/business22.487beadbd2007382b1d3.JPG",
     "static/media/integPM243.JPG": "/static/media/integPM243.f9a0d301650fd1a092d0.JPG",
-    "static/media/team_sunrider0.JPG": "/static/media/team_sunrider0.67555585dadc5a1a0498.JPG",
     "static/media/business21.png": "/static/media/business21.2e1b46e540cb5651bc24.png",
     "static/media/treasurer21.jpg": "/static/media/treasurer21.36e6a691031a5894594c.jpg",
     "static/media/Inter-VariableFont.ttf": "/static/media/Inter-VariableFont.aadb65ac45347ff46699.ttf",
@@ -98,17 +101,14 @@
     "static/media/electricalPM23.JPG": "/static/media/electricalPM23.436f7472c35f66c13a25.JPG",
     "static/media/Bmrs.png": "/static/media/Bmrs.dd408df65182269c5213.png",
     "static/media/FirmwareLead24.jpg": "/static/media/FirmwareLead24.1d87957d86251ab3e53a.jpg",
-    "static/media/working1.jpeg": "/static/media/working1.c98593a4b2d1da9977e0.jpeg",
     "static/media/SuspensionLead24.JPG": "/static/media/SuspensionLead24.6d4b0bc3bc51d0e0a1ff.JPG",
     "static/media/BMSLead24.JPG": "/static/media/BMSLead24.5140fd65dfdfc7a2836e.JPG",
     "static/media/TelemetryLead24.JPG": "/static/media/TelemetryLead24.367d6a43b043e33739c2.JPG",
-    "static/media/outreach1.jpeg": "/static/media/outreach1.cf1f4b658dc035e58faf.jpeg",
     "static/media/integPM241.JPG": "/static/media/integPM241.a7782acee15e53659f8a.JPG",
     "static/media/bms21.jpg": "/static/media/bms21.b6bd5cb714468e267d49.jpg",
     "static/media/treasurer20.jpg": "/static/media/treasurer20.b6bd5cb714468e267d49.jpg",
     "static/media/BrakesLead24.JPG": "/static/media/BrakesLead24.14584b9046be3f784d5c.JPG",
     "static/media/Inter-VariableFont.woff2": "/static/media/Inter-VariableFont.b2b32f7882156658c072.woff2",
-    "static/media/people_sunrider0.jpeg": "/static/media/people_sunrider0.0d212fc7164e1a06882d.jpeg",
     "static/media/Digikey Logo.jpg": "/static/media/Digikey Logo.65be1494ef09735d4864.jpg",
     "static/media/business20.JPG": "/static/media/business20.22bdc7e90c54477f5d79.JPG",
     "static/media/power21.JPG": "/static/media/power21.22bdc7e90c54477f5d79.JPG",
@@ -165,11 +165,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.45d7f54e.css.map": "/static/css/main.45d7f54e.css.map",
-    "main.bf628b00.js.map": "/static/js/main.bf628b00.js.map"
+    "main.79016fd5.css.map": "/static/css/main.79016fd5.css.map",
+    "main.7263054f.js.map": "/static/js/main.7263054f.js.map"
   },
   "entrypoints": [
-    "static/css/main.45d7f54e.css",
-    "static/js/main.bf628b00.js"
+    "static/css/main.79016fd5.css",
+    "static/js/main.7263054f.js"
   ]
 }
