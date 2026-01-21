@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.79016fd5.css",
-    "main.js": "/static/js/main.7263054f.js",
+    "main.js": "/static/js/main.09991e19.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
-    "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
     "static/media/SG25_Flare.jpg": "/static/media/SG25_Flare.f419371d48601d99c367.jpg",
@@ -36,6 +35,7 @@
     "static/media/SG25_Dynamics.JPG": "/static/media/SG25_Dynamics.625b6e22e855e7c785e9.JPG",
     "static/media/Treasurer.JPG": "/static/media/Treasurer.d6fe33c190a08a4c8ead.JPG",
     "static/media/Altair24.jpg": "/static/media/Altair24.b731850f16a99010d5bf.jpg",
+    "static/media/2025-2026 Solar Gators Sponsorship Packet Digital.pdf": "/static/media/2025-2026 Solar Gators Sponsorship Packet Digital.f3cc1bfc67811f136620.pdf",
     "static/media/Aero_Lead.JPG": "/static/media/Aero_Lead.78c17c568471f342af00.JPG",
     "static/media/bmslead25.JPG": "/static/media/bmslead25.c8c66e91305a2e10eee8.JPG",
     "static/media/telemetry21.jpg": "/static/media/telemetry21.fa51d460943dc3e4a0cf.jpg",
@@ -166,10 +166,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.79016fd5.css.map": "/static/css/main.79016fd5.css.map",
-    "main.7263054f.js.map": "/static/js/main.7263054f.js.map"
+    "main.09991e19.js.map": "/static/js/main.09991e19.js.map"
   },
   "entrypoints": [
     "static/css/main.79016fd5.css",
-    "static/js/main.7263054f.js"
+    "static/js/main.09991e19.js"
   ]
 }
