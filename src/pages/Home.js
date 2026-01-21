@@ -211,7 +211,7 @@ export default function Home() {
                   <div className={"join-text-half"}>
                       <p>We welcome gators of all majors, backgrounds, and experience levels. Interested in joining us on the road to solar success?  Fill out the new member interest form. </p>
                      
-                      <Button style={{marginTop:"0px",marginBottom:"16px"}} className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLScIrnd9WXZzx5f7obqTeMtIWuLGnaquYadNviaSW46ysM3JPg/viewform?usp=header "} target="_blank">
+                      <Button style={{marginTop:"0px",marginBottom:"16px"}} className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLSf3WscS_juY1W2_Rv7wr4uuE8tVoF96CCCBhKN9n3GpgjNYzg/viewform?usp=publish-editor "} target="_blank">
                           Interest Form
                       </Button>
                   </div>
@@ -225,12 +225,12 @@ export default function Home() {
                                   <p className={"accent_word"}>THURSDAY</p>
                               </div>
                               <div className={"flex-cols-center"}>
-                                  <p>6:00 PM</p>
-                                  <p>6:00 PM</p>
+                                  <p>6:00-8:00 PM</p>
+                                  <p>6:00-8:00 PM</p>
                               </div>
                               <div className={"flex-cols-center"}>
-                                  <p>Matherly Hall</p>
-                                  <p>Matherly Hall</p>
+                                  <p></p>
+                                  <p></p>
                               </div>
                           </div>
                       </div>

@@ -19,7 +19,7 @@ let p1 = "Solar Gators is a fully student-run engineering design team at " +
     "Each year we proudly represent the Sunshine State in the Formula Sun Grand Prix (FSGP)."
 
 //Blurb Section 2
-let p2a = "With nearly a decade of innovation behind us and multiple competition wins under our belt, " +
+let p2a = "With nearly a decade of innovation behind us and a first place finish at the Formula Sun Grand Prix under our belt, " +
     "we've solidified our place in the solar car world. Our journey proves that a team run on " +
     "commitment, creativity, and innovation can overcome any obstacle."
 
@@ -114,13 +114,13 @@ export default function About() {
             </h2>
                 <TrackRecord
                     on_mobile={mobileView}
-                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track"
-                    blurb2="Competed in the Formula Sun Grand Prix six times since 2016"
-                    blurb3="Won fastest lap at the 2025 FSGP"
-                    blurb4="Won 1st place in the Mathworks competition at the 2025 Formula Sun Grand Prix"
-                    blurb5="Secured a spot in the 2024 American Solar Challenge (ASC)"
-                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,000, by achieving an overall weight reduction of 81%"
-                    blurb7="Designed and manufactured 4 solar cars from the ground up"
+                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix after completing 707.5 miles on track"
+                    blurb2="Competed in the Formula Sun Grand Prix seven times since 2016"
+                    blurb3="Set the fastest lap at the 2025 Formula Sun Grand Prix"
+                    blurb4="Won 1st place in the Mathworks presentation competition at the 2025 Formula Sun Grand Prix"
+                    blurb5="Qualified for our first American Solar Challenge in 2024"
+                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,000"
+                    blurb7="Designed and manufactured four solar cars in ten years from the ground up"
                     blurb8="100% student run"
                 />
             </Container>
