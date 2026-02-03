@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.79016fd5.css",
-    "main.js": "/static/js/main.09991e19.js",
+    "main.css": "/static/css/main.71e424f4.css",
+    "main.js": "/static/js/main.79a6b2df.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
@@ -104,6 +104,7 @@
     "static/media/SuspensionLead24.JPG": "/static/media/SuspensionLead24.6d4b0bc3bc51d0e0a1ff.JPG",
     "static/media/BMSLead24.JPG": "/static/media/BMSLead24.5140fd65dfdfc7a2836e.JPG",
     "static/media/TelemetryLead24.JPG": "/static/media/TelemetryLead24.367d6a43b043e33739c2.JPG",
+    "static/media/dragonplate-vertical-light.png": "/static/media/dragonplate-vertical-light.ac229ecee0034275db1c.png",
     "static/media/integPM241.JPG": "/static/media/integPM241.a7782acee15e53659f8a.JPG",
     "static/media/bms21.jpg": "/static/media/bms21.b6bd5cb714468e267d49.jpg",
     "static/media/treasurer20.jpg": "/static/media/treasurer20.b6bd5cb714468e267d49.jpg",
@@ -142,6 +143,8 @@
     "static/media/facebook_logo0.png": "/static/media/facebook_logo0.7ddd5f1f6916af910777.png",
     "static/media/youtube_logo0.png": "/static/media/youtube_logo0.d425224b05da2bf69d01.png",
     "static/media/MerrittSupply.png": "/static/media/MerrittSupply.f0d0a6004103a14f2e4d.png",
+    "static/media/MerrittBoatworksLogo.jpg": "/static/media/MerrittBoatworksLogo.1d14e124ff0e7444cb80.jpg",
+    "static/media/linkedin_logo.png": "/static/media/linkedin_logo.b1f6366fa6a5d5b3d266.png",
     "static/media/Towing Cash Calls Logo.png": "/static/media/Towing Cash Calls Logo.3349b720de32ed3e679e.png",
     "static/media/Mathworks.png": "/static/media/Mathworks.f8a47c4f51793fd98787.png",
     "static/media/linkedin_logo copy.png": "/static/media/linkedin_logo copy.45565e16930dbc203f91.png",
@@ -165,11 +168,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.79016fd5.css.map": "/static/css/main.79016fd5.css.map",
-    "main.09991e19.js.map": "/static/js/main.09991e19.js.map"
+    "main.71e424f4.css.map": "/static/css/main.71e424f4.css.map",
+    "main.79a6b2df.js.map": "/static/js/main.79a6b2df.js.map"
   },
   "entrypoints": [
-    "static/css/main.79016fd5.css",
-    "static/js/main.09991e19.js"
+    "static/css/main.71e424f4.css",
+    "static/js/main.79a6b2df.js"
   ]
 }
