@@ -32,26 +32,26 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 // OFFICER LISTS -----------------------------
 
 //2025-26: (Names, Positions,Headshot)
-let executive_board25 = [["Connor Ellis", "President", president25],
-    ["Chelsea Catabia", "Vice President", vicepresident25],
-    ["Noah Murphy", "Treasurer", treasurer25],
-    ["Natalia Oliver Sampaio", "Secretary", secretary25],
-    ["Dakota Rosher", "Business Coordinator", business25]];
-let ces25 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM250],
-    ["Trevor Bendik", "Mechanical Chief Engineer", mechPM251],
-    ["Nathan Achinger", "Electrical Chief Engineer", electricalPM25]];
-let pms25 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM251],
-    ["Jayce McMillan", "Electrical Integration PM", integrationPM250]];
+let executive_board25 = [["Connor Ellis", "President", president25, "https://www.linkedin.com/in/connorellis111/"],
+    ["Chelsea Catabia", "Vice President", vicepresident25, "https://www.linkedin.com/in/chelsea-catabia/"],
+    ["Noah Murphy", "Treasurer", treasurer25, "https://www.linkedin.com/in/noahmurphy2006/"],
+    ["Natalia Oliver Sampaio", "Secretary", secretary25, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
+    ["Dakota Rosher", "Business Coordinator", business25, "https://www.linkedin.com/in/dakota-rosher-065b5a28b/"]];
+let ces25 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM250, "https://www.linkedin.com/in/amit-sagar1/"],
+    ["Trevor Bendik", "Mechanical Chief Engineer", mechPM251, "https://www.linkedin.com/in/trevorbendik/"],
+    ["Nathan Achinger", "Electrical Chief Engineer", electricalPM25, "https://www.linkedin.com/in/nathan-achinger/"]];
+let pms25 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM251, "https://www.linkedin.com/in/elijah-baluyot/"],
+    ["Jayce McMillan", "Electrical Integration PM", integrationPM250, "https://www.linkedin.com/in/jayce-mcmillan/"]];
 let electrical25 = [
-    ["Joshua Kwak", "BMS", bMSLead25],
-    ["Justin Lopez", "Firmware", firmwareLead25],
-    ["Bradley Cedarholm", "Strategy", stratLead25]];
+    ["Joshua Kwak", "BMS", bMSLead25, "https://www.linkedin.com/in/jkwak7/"],
+    ["Justin Lopez", "Firmware", firmwareLead25, "https://www.linkedin.com/in/justinclopez/"],
+    ["Bradley Cedarholm", "Strategy", stratLead25, "https://www.linkedin.com/in/bradleycederholm/"]];
 let mech_aero25= [
-    ["Griffin York", "Aerobody", aerobodyLead25],
-    ["Diego Olivo", "Battery Pack", batteryPackLead25],
-    ["George Shearer", "Cockpit", cockpitLead25],
-    ["Callie Monville", "Structures", structuresLead25],
-    ["Austin Stang", "Suspension", suspensionLead25]
+    ["Griffin York", "Aerobody", aerobodyLead25, "https://www.linkedin.com/in/griffinyork/"],
+    ["Diego Olivo", "Battery Pack", batteryPackLead25, "https://www.linkedin.com/in/diego-olivo1/"],
+    ["George Shearer", "Cockpit", cockpitLead25, "https://www.linkedin.com/in/georgeasheareriii/"],
+    ["Callie Monville", "Structures", structuresLead25, "https://www.linkedin.com/in/callie-monville/"],
+    ["Austin Stang", "Suspension", suspensionLead25, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
 
 ];
 

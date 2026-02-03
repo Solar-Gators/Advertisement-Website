@@ -90,6 +90,8 @@ import element29 from './Element 29 Logo.png'
 import californiafilaments from './California Filaments Logo.png'
 import Diab from './Diab Logo.jpeg'
 import tilton from './Tilton Logo.jpeg'
+import dragonplate from './dragonplate-vertical-light.png'
+import MerrittBoatworks from './MerrittBoatworksLogo.jpg'
 
 
 //Car 3 Sponsors - Sorted by tier in 2D array: [logo, website link]
@@ -112,7 +114,7 @@ let platinum4 = [[MAE, "http://mae.ufl.edu/"], [scubasteve], [BateMo, "https://w
 let gold4 = [[Altair, "https://altair.com/"], [RoyalElements, "https://royal-elements.com/"]];
 let silver4 = [[ECE, "https://www.ece.ufl.edu/"], [segger, "https://www.segger.com/"]];
 let bronze4 = [[SKF, "https://www.skf.com/us"], [Digikey, "https://www.digikey.com/"], [lutron, "https://www.lutron.com/us/en"]];
-let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"], [VR3, "https://vr3.ca/"], [siemens, "https://www.siemens.com/"], [element29], [californiafilaments, "https://californiafilament.com/"], [FusionFilaments, "https://www.fusionfilaments.com/"], [Diab, "https://www.diabgroup.com/"], [tilton, "https://tiltonracing.com/"]];
+let valued4 = [[Coilcraft, "https://www.coilcraft.com/"], [TexasInstruments], [STMicroelectronics, "https://www.st.com/content/st_com/en.html"], [VR3, "https://vr3.ca/"], [siemens, "https://www.siemens.com/"], [element29], [californiafilaments, "https://californiafilament.com/"], [FusionFilaments, "https://www.fusionfilaments.com/"], [Diab, "https://www.diabgroup.com/"], [tilton, "https://tiltonracing.com/"], [dragonplate, "https://dragonplate.com/"], [MerrittBoatworks, "https://www.merrittboat.com/"]];
 let patron4 = ["Joelen and Bob Merkel", "Nelms", "Chenard", "Werner", "Alderman", "Shaw", "Schedel", "Smith", "Shen", "Nett", "Indigo Strategic Consulting", "Poly Plus Battery Co.", "Towing Cash Calls", "Advantek Engineering Inc.", "Blue Origin", "Sandia National Laboratories",
     "Wal-Mart Stores, Inc.", "Gene Haas Foundation"];
 let solarpatron4 = [["Matt and Kelly Wright"],["Lutron"],["Christie and Chris Ellis"],["Doug Hann"],["Marcelo Valdez"],["Rick and Karen Sargeant"],["David Murphy"],["Matthew Gish and Michelle Barton"],["Melinda Gish"],["Samuel Breslin"],["Melanie Murphy"],["Brad and Misty Brown"],["Carrie Dugan"],["Pete and Debbie Fowler"],["Pamela Dickrell"],

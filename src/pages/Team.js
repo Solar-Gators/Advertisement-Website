@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
 import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev, get_ces} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
+import linkedinLogo from "../content/assets/images/app_icons/linkedin_logo.png";
 
 //2025-26 Officers: (Names, Positions, Headshots)
 let executive_board25= get_eboard("2025");
@@ -92,7 +93,7 @@ function AcademicYear({ eventkey }) {
 function OfficerTeam({ eventkey, executive_board, on_mobile }) {
 
     //Individual Officer
-    let Officer = ({ name, title, img }) => {
+    let Officer = ({ name, title, img, linkedin }) => {
         let padding = 13.5;
         if (on_mobile) {
             padding = 2;
@@ -107,24 +108,37 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
                     <div className={"headshot"}>
                         <img className={"headshot-img"} src={img} alt={"headshot"}/>
                     </div>
-                    <h5 style={{paddingBottom: padding}}>{name}</h5>
-                    <h6 style={{paddingTop: padding}}>{title}</h6>
-                </div>
-            </Col>
-        )
-    }
+                {/*Added LinkedIn Profiles to All  2025-26 Members*/}    
+                
+
+                {/* Name + optional LinkedIn icon */}
+                <h5 style={{ paddingBottom: padding, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", }}>
+                    {name}
+                    {linkedin && (
+                        <a href={linkedin} target="_blank" rel="noopener noreferrer" style={{ marginLeft: "0.5rem" }}>
+                            <img src={linkedinLogo} alt="LinkedIn" style={{ width: "20px", height: "20px" }} />
+                        </a>
+                    )}
+                </h5>
+
+                <h6 style={{ paddingTop: padding }}>{title}</h6>
+            </div>
+        </Col>
+    )
+}    
+
 
     //Row of officers in same category
     let OfficersRow = ({heading, officers}) => {
         return (
             <Row className="no-margin-padding" style={{justifyContent: "center"}}>
                 <h2 id="officer-category-heading">{heading}</h2>
-                {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]}/> : ""}
-                {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]}/> : ""}
-                {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]}/> : ""}
-                {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]}/> : ""}
-                {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]}/> : ""}
-                {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]}/> : ""}
+                {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} linkedin={officers[0][3]}/> : ""}
+                {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} linkedin={officers[1][3]}/> : ""}
+                {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]} linkedin={officers[2][3]}/> : ""}
+                {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]} linkedin={officers[3][3]}/> : ""}
+                {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]} linkedin={officers[4][3]}/> : ""}
+                {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]} linkedin={officers[5][3]}/> : ""}
             </Row>
         )
     }
