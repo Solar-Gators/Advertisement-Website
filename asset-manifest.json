@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.71e424f4.css",
-    "main.js": "/static/js/main.79a6b2df.js",
+    "main.js": "/static/js/main.9d9cf080.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
@@ -28,7 +28,6 @@
     "static/media/Secretary.JPG": "/static/media/Secretary.6840b5d289cffb7a9980.JPG",
     "static/media/President.JPG": "/static/media/President.40211e560ac1eca17381.JPG",
     "static/media/Vice_President.JPG": "/static/media/Vice_President.2fb29d3707068be33aec.JPG",
-    "static/media/Battery_Pack_Lead.JPG": "/static/media/Battery_Pack_Lead.49951ed56b430cf2b15c.JPG",
     "static/media/Integration_PM_Jayce.JPG": "/static/media/Integration_PM_Jayce.c5d006616244ac04a940.JPG",
     "static/media/Suspension_Lead.JPG": "/static/media/Suspension_Lead.9a186e60653d89291b95.JPG",
     "static/media/Electrical_CE.JPG": "/static/media/Electrical_CE.efb3170df364d9ced465.JPG",
@@ -110,6 +109,7 @@
     "static/media/treasurer20.jpg": "/static/media/treasurer20.b6bd5cb714468e267d49.jpg",
     "static/media/BrakesLead24.JPG": "/static/media/BrakesLead24.14584b9046be3f784d5c.JPG",
     "static/media/Inter-VariableFont.woff2": "/static/media/Inter-VariableFont.b2b32f7882156658c072.woff2",
+    "static/media/BattPackLead.jpeg": "/static/media/BattPackLead.8f3a070ea0597aafdff0.jpeg",
     "static/media/Digikey Logo.jpg": "/static/media/Digikey Logo.65be1494ef09735d4864.jpg",
     "static/media/business20.JPG": "/static/media/business20.22bdc7e90c54477f5d79.JPG",
     "static/media/power21.JPG": "/static/media/power21.22bdc7e90c54477f5d79.JPG",
@@ -169,10 +169,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.71e424f4.css.map": "/static/css/main.71e424f4.css.map",
-    "main.79a6b2df.js.map": "/static/js/main.79a6b2df.js.map"
+    "main.9d9cf080.js.map": "/static/js/main.9d9cf080.js.map"
   },
   "entrypoints": [
     "static/css/main.71e424f4.css",
-    "static/js/main.79a6b2df.js"
+    "static/js/main.9d9cf080.js"
   ]
 }
