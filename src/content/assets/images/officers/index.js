@@ -48,7 +48,7 @@ let electrical25 = [
     ["Bradley Cedarholm", "Strategy", stratLead25, "https://www.linkedin.com/in/bradleycederholm/"]];
 let mech_aero25= [
     ["Griffin York", "Aerobody", aerobodyLead25, "https://www.linkedin.com/in/griffinyork/"],
-    ["Diego Olivo", "Battery Pack", batteryPackLead25, "https://www.linkedin.com/in/diego-olivo1/"],
+    ["Lucas Chahine", "Battery Pack", batteryPackLead25, "https://www.linkedin.com/in/lucas-chahine-2ba857233/"],
     ["George Shearer", "Cockpit", cockpitLead25, "https://www.linkedin.com/in/georgeasheareriii/"],
     ["Callie Monville", "Structures", structuresLead25, "https://www.linkedin.com/in/callie-monville/"],
     ["Austin Stang", "Suspension", suspensionLead25, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
