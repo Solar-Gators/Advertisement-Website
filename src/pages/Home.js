@@ -145,7 +145,7 @@ export default function Home() {
     return (
       <React.Fragment>
           {/*  Page Header */}
-          <Header title={"Powered By Florida sunshine"}
+          <Header title={"Powered By Florida Sunshine"}
                   imgcss={"home-header-img"}/>
 
           {/* Awards */}

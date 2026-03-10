@@ -23,7 +23,7 @@ let p2a = "With nearly a decade of innovation behind us and a first place finish
     "we've solidified our place in the solar car world. Our journey proves that a team run on " +
     "commitment, creativity, and innovation can overcome any obstacle."
 
-let p2b = "As a team of passionate engineers, we work tirelessly to achieve our goals. " +
+let p2b = "As a team of motivated engineers, we work tirelessly to achieve our goals. " +
     "From the initial design phase to the final race day, we're committed to excellence " +
     "in everything we do. Even when facing the toughest challenges, our team stays motivated " +
     "and dedicated to keeping things on track."
