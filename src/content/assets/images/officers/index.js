@@ -2,7 +2,7 @@
 
 // 2026-27
 import { president26, vicepresident26, treasurer26, secretary26, business26, mechPM260, mechPM261, electricalPM26, 
-    integrationPM260, integrationPM261, integrationPM262, stratLead26, aerobodyLead26, cockpitLead26, batteryPackLead26, bMSLead26, firmwareLead26, solarArrayLead26, structuresLead26, suspensionLead26
+    integrationPM260, integrationPM261, integrationPM262, stratLead26, aerobodyLead26, cockpitLead26, batteryPackLead26, bMSLead26, firmwareLead26, solarArrayLead26, structuresLead26, suspensionLead26, telemetryLead26
 } from './2026/index'
 
 // 2025-26
@@ -36,27 +36,29 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 
 // OFFICER LISTS -----------------------------
 //2026-27: (Names, Positions,Headshot)
-let executive_board26 = [["Isabella Lucarelli", "President", president26, "https://www.linkedin.com/in/connorellis111/"],
-    ["Natalia Sampaio", "Vice President", vicepresident26, "https://www.linkedin.com/in/chelsea-catabia/"],
-    ["Jason Flick", "Treasurer", treasurer26, "https://www.linkedin.com/in/noahmurphy2006/"],
-    ["Natalie Romero", "Secretary", secretary26, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
-    ["Brandon Greenburg", "Business Coordinator", business26, "https://www.linkedin.com/in/dakota-rosher-065b5a28b/"]];
-let ces26 = [["Griffin York", "Mechanical Chief Engineer", mechPM260, "https://www.linkedin.com/in/amit-sagar1/"],
-    ["Austin Stang", "Mechanical Chief Engineer", mechPM261, "https://www.linkedin.com/in/trevorbendik/"],
-    ["Joshua Kwak", "Electrical Chief Engineer", electricalPM26, "https://www.linkedin.com/in/nathan-achinger/"]];
-let pms26 = [["Emi Sanchez", "Mechanical Integration PM", integrationPM261, "https://www.linkedin.com/in/elijah-baluyot/"],
-    ["Allison Donald", "Mechanical Integration PM", integrationPM262, "https://www.linkedin.com/in/elijah-baluyot/"],
-    ["Marwa Khan", "Electrical Integration PM", integrationPM260, "https://www.linkedin.com/in/jayce-mcmillan/"]];
+let executive_board26 = [["Isabella Lucarelli", "President", president26, ],
+    ["Natalia Sampaio", "Vice President", vicepresident26, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
+    ["Jason Flick", "Treasurer", treasurer26, "https://www.linkedin.com/in/jason-flick-/"],
+    ["Natalie Romero", "Secretary", secretary26, "https://www.linkedin.com/in/natalieromero2905/"],
+    ["Brandon Greenburg", "Business Coordinator", business26, ]];
+let ces26 = [["Griffin York", "Mechanical Chief Engineer", mechPM260, "https://www.linkedin.com/in/griffinyork/"],
+    ["Austin Stang", "Mechanical Chief Engineer", mechPM261, "https://www.linkedin.com/in/austin-stang-177b972b6//"],
+    ["Joshua Kwak", "Electrical Chief Engineer", electricalPM26, "https://www.linkedin.com/in/jkwak7/"]];
+let pms26 = [["Emi Sanchez", "Mechanical Integration PM", integrationPM261, "https://www.linkedin.com/in/emi-sanchez-363189261/"],
+    ["Allison Donald", "Mechanical Integration PM", integrationPM262, "https://www.linkedin.com/in/allison-donald-8118a5268/"],
+    ["Marwa Khan", "Electrical Integration PM", integrationPM260, "https://www.linkedin.com/in/marwa-khan1/"]];
 let electrical26 = [
-    ["Ahmed Kamel", "BMS", bMSLead26, "https://www.linkedin.com/in/jkwak7/"],
-    ["Richard Carnivale", "Firmware", firmwareLead26, "https://www.linkedin.com/in/justinclopez/"],
-    ["Anthony Zheng", "Strategy", stratLead26, "https://www.linkedin.com/in/bradleycederholm/"]];
+    ["Ahmed Kamel", "BMS", bMSLead26, "https://www.linkedin.com/in/ahmedk11907/"],
+    ["Richard Carnivale", "Firmware", firmwareLead26, "https://www.linkedin.com/in/richard-carnivale/"],
+    ["Anthony Zheng", "Strategy", stratLead26, "https://www.linkedin.com/in/zheng-anthony/"],
+    ["Shawn Vazhappilly", "Telemetry", telemetryLead26, "https://www.linkedin.com/in/shawn-vazhappilly-946436196/"],
+    ["Kasper Schroff", "Solar Array", solarArrayLead26 ]];
 let mech_aero26= [
-    ["Isabella Nowakowski", "Aerobody", aerobodyLead26, "https://www.linkedin.com/in/griffinyork/"],
-    ["Zachary Sargeant", "Battery Pack", batteryPackLead26, "https://www.linkedin.com/in/lucas-chahine-2ba857233/"],
-    ["Austin Reichl", "Cockpit", cockpitLead26, "https://www.linkedin.com/in/georgeasheareriii/"],
-    ["Anneliese Nguyen", "Structures", structuresLead26, "https://www.linkedin.com/in/callie-monville/"],
-    ["Henry Reyes-Perez", "Suspension", suspensionLead26, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
+    ["Isabella Nowakowski", "Aerobody", aerobodyLead26, "https://www.linkedin.com/in/isabellanowakowski/"],
+    ["Zachary Sargeant", "Battery Pack", batteryPackLead26, "https://www.linkedin.com/in/zsargeant/"],
+    ["Austin Reichl", "Cockpit", cockpitLead26, "https://www.linkedin.com/in/apreichl/"],
+    ["Anneliese Nguyen", "Structures", structuresLead26, "https://www.linkedin.com/in/anneliese-nguyen/"],
+    ["Henry Reyes-Perez", "Suspension", suspensionLead26, "https://www.linkedin.com/in/henry-reyes-perez454/"]
 
 ];
 
@@ -144,7 +146,7 @@ let electrical22 =  [["Yashasvi Bhat", "Embedded Systems", embeddedsystems22], [
     ["Taylor Gerke", "Low Voltage", lowvoltage22], ["Emma Geon", "Power Management", powermanagement22]];
 let competition_team22 = ['Ellie Alderman', 'Elijah Baluyot',
     'Yashasvi Bhat', 'Samuel Breslin', 'Andrew Carter',
-    'Irene Chung', 'Timothy Dockham', 'Andres Duque', 'Connor Ellis',
+    'Irene Chung', 'Timothy Dockham', 'Andres Duque', 'Connor Ehttps://www.linkedin.com/in/austin-stang-177b972b6/llis',
     'Emma Geon', 'Taylor Gerke', 'Ruben Gonzalez',
     'Isabella Lucarelli', 'Christian Michaelis', 'Lacie Michaelis',
     'Anton Nyugen', 'Stanley Noel','Jack Schedel','Lauren Shaw',

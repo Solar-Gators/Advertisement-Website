@@ -16,6 +16,7 @@ export { default as cockpitLead26 }   from "./Cockpit_Lead.JPG";
 export { default as batteryPackLead26 }   from "./BattPack_Lead.JPG";
 export { default as bMSLead26 }   from "./BMS_Lead.JPG";
 export { default as firmwareLead26 }   from "./Firmware_Lead.JPG";
-//export { default as solarArrayLead25 }   from "./SolarArrayLead24.JPG";
+export { default as solarArrayLead26 }   from "./SolarArray_Lead.JPG";
 export { default as structuresLead26 }   from "./Structures_Lead.JPG";
 export { default as suspensionLead26 }   from "./Suspension_Lead.JPG";
+export { default as telemetryLead26 }   from "./Telemetry_Lead.JPG";
