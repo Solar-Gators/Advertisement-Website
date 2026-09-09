@@ -12,7 +12,7 @@ let executive_board26= get_eboard("2026");
 let pms26 = get_pms("2026");
 let ces26 = get_ces("2026")
 let mech_aero26 = get_mech("2026");
-let electrical26 =  get_elec("2026");
+let electrical26 =  get_elec("2026");   
 
 //2025-26 Officers: (Names, Positions, Headshots)
 let executive_board25= get_eboard("2025");

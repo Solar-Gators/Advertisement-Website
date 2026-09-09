@@ -35,6 +35,29 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 
 
 // OFFICER LISTS -----------------------------
+//2026-27: (Names, Positions,Headshot)
+let executive_board26 = [["Isabella Lucarelli", "President", president26, "https://www.linkedin.com/in/connorellis111/"],
+    ["Natalia Sampaio", "Vice President", vicepresident26, "https://www.linkedin.com/in/chelsea-catabia/"],
+    ["Jason Flick", "Treasurer", treasurer26, "https://www.linkedin.com/in/noahmurphy2006/"],
+    ["Natalia Oliver Sampaio", "Secretary", secretary26, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
+    ["Dakota Rosher", "Business Coordinator", business26, "https://www.linkedin.com/in/dakota-rosher-065b5a28b/"]];
+let ces26 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM260, "https://www.linkedin.com/in/amit-sagar1/"],
+    ["Trevor Bendik", "Mechanical Chief Engineer", mechPM261, "https://www.linkedin.com/in/trevorbendik/"],
+    ["Nathan Achinger", "Electrical Chief Engineer", electricalPM26, "https://www.linkedin.com/in/nathan-achinger/"]];
+let pms26 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM261, "https://www.linkedin.com/in/elijah-baluyot/"],
+    ["Jayce McMillan", "Electrical Integration PM", integrationPM260, "https://www.linkedin.com/in/jayce-mcmillan/"]];
+let electrical26 = [
+    ["Joshua Kwak", "BMS", bMSLead26, "https://www.linkedin.com/in/jkwak7/"],
+    ["Justin Lopez", "Firmware", firmwareLead26, "https://www.linkedin.com/in/justinclopez/"],
+    ["Bradley Cedarholm", "Strategy", stratLead26, "https://www.linkedin.com/in/bradleycederholm/"]];
+let mech_aero26= [
+    ["Griffin York", "Aerobody", aerobodyLead26, "https://www.linkedin.com/in/griffinyork/"],
+    ["Lucas Chahine", "Battery Pack", batteryPackLead26, "https://www.linkedin.com/in/lucas-chahine-2ba857233/"],
+    ["George Shearer", "Cockpit", cockpitLead26, "https://www.linkedin.com/in/georgeasheareriii/"],
+    ["Callie Monville", "Structures", structuresLead26, "https://www.linkedin.com/in/callie-monville/"],
+    ["Austin Stang", "Suspension", suspensionLead26, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
+
+];
 
 //2025-26: (Names, Positions,Headshot)
 let executive_board25 = [["Connor Ellis", "President", president25, "https://www.linkedin.com/in/connorellis111/"],
