@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.71e424f4.css",
-    "main.js": "/static/js/main.4bf33e47.js",
+    "main.js": "/static/js/main.cd3b4566.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
@@ -27,7 +27,7 @@
     "static/media/Mech_CE_Trevor.JPG": "/static/media/Mech_CE_Trevor.4fc7f18a7cba8e0fd2c7.JPG",
     "static/media/Secretary.JPG": "/static/media/Secretary.2d1b4a5991918b4a86f5.JPG",
     "static/media/President.JPG": "/static/media/President.40211e560ac1eca17381.JPG",
-    "static/media/Vice_President.JPG": "/static/media/Vice_President.adda1dea343768d58cb3.JPG",
+    "static/media/Vice_President.JPG": "/static/media/Vice_President.96d7f76b9ead0404cf07.JPG",
     "static/media/Integration_PM_Jayce.JPG": "/static/media/Integration_PM_Jayce.c5d006616244ac04a940.JPG",
     "static/media/Suspension_Lead.JPG": "/static/media/Suspension_Lead.e3666c2ca33b9d57fe23.JPG",
     "static/media/Electrical_CE.JPG": "/static/media/Electrical_CE.4c81bbab4e7f8b8d548f.JPG",
@@ -109,8 +109,11 @@
     "static/media/integPM241.JPG": "/static/media/integPM241.a7782acee15e53659f8a.JPG",
     "static/media/bms21.jpg": "/static/media/bms21.b6bd5cb714468e267d49.jpg",
     "static/media/treasurer20.jpg": "/static/media/treasurer20.b6bd5cb714468e267d49.jpg",
+    "static/media/Telemetry_Lead.JPG": "/static/media/Telemetry_Lead.c1d73214c8e69e63788d.JPG",
     "static/media/BrakesLead24.JPG": "/static/media/BrakesLead24.14584b9046be3f784d5c.JPG",
     "static/media/Inter-VariableFont.woff2": "/static/media/Inter-VariableFont.b2b32f7882156658c072.woff2",
+    "static/media/SolarArray_Lead.JPG": "/static/media/SolarArray_Lead.6c512dbae8bd87c75ee6.JPG",
+    "static/media/Mech_CE_Austin.JPG": "/static/media/Mech_CE_Austin.9b227191cdea949e3c27.JPG",
     "static/media/BattPackLead.jpeg": "/static/media/BattPackLead.8f3a070ea0597aafdff0.jpeg",
     "static/media/MechIntegration_PM_Allison.JPG": "/static/media/MechIntegration_PM_Allison.c8fb4eddd89ac3568204.JPG",
     "static/media/Digikey Logo.jpg": "/static/media/Digikey Logo.65be1494ef09735d4864.jpg",
@@ -118,7 +121,6 @@
     "static/media/power21.JPG": "/static/media/power21.22bdc7e90c54477f5d79.JPG",
     "static/media/secretary20.png": "/static/media/secretary20.4ca29e1d7125701b5e3a.png",
     "static/media/vp21.png": "/static/media/vp21.4ca29e1d7125701b5e3a.png",
-    "static/media/Mech_CE_Austin.JPG": "/static/media/Mech_CE_Austin.9b0c2af69ca40cd91dff.JPG",
     "static/media/BMS_Lead.JPG": "/static/media/BMS_Lead.859c9e40381732cbf973.JPG",
     "static/media/Firmware_Lead.JPG": "/static/media/Firmware_Lead.735a564b9989fffcef5f.JPG",
     "static/media/Cockpit_Lead.JPG": "/static/media/Cockpit_Lead.19905385af8ccfee1644.JPG",
@@ -181,10 +183,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.71e424f4.css.map": "/static/css/main.71e424f4.css.map",
-    "main.4bf33e47.js.map": "/static/js/main.4bf33e47.js.map"
+    "main.cd3b4566.js.map": "/static/js/main.cd3b4566.js.map"
   },
   "entrypoints": [
     "static/css/main.71e424f4.css",
-    "static/js/main.4bf33e47.js"
+    "static/js/main.cd3b4566.js"
   ]
 }
