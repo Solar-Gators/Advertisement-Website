@@ -39,23 +39,24 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 let executive_board26 = [["Isabella Lucarelli", "President", president26, "https://www.linkedin.com/in/connorellis111/"],
     ["Natalia Sampaio", "Vice President", vicepresident26, "https://www.linkedin.com/in/chelsea-catabia/"],
     ["Jason Flick", "Treasurer", treasurer26, "https://www.linkedin.com/in/noahmurphy2006/"],
-    ["Natalia Oliver Sampaio", "Secretary", secretary26, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
-    ["Dakota Rosher", "Business Coordinator", business26, "https://www.linkedin.com/in/dakota-rosher-065b5a28b/"]];
-let ces26 = [["Amit Sagar", "Mechanical Chief Engineer", mechPM260, "https://www.linkedin.com/in/amit-sagar1/"],
-    ["Trevor Bendik", "Mechanical Chief Engineer", mechPM261, "https://www.linkedin.com/in/trevorbendik/"],
-    ["Nathan Achinger", "Electrical Chief Engineer", electricalPM26, "https://www.linkedin.com/in/nathan-achinger/"]];
-let pms26 = [["Elijah Baluyot", "Mechanical Integration PM", integrationPM261, "https://www.linkedin.com/in/elijah-baluyot/"],
-    ["Jayce McMillan", "Electrical Integration PM", integrationPM260, "https://www.linkedin.com/in/jayce-mcmillan/"]];
+    ["Natalie Romero", "Secretary", secretary26, "https://www.linkedin.com/in/natalia-oliver-sampaio/"],
+    ["Brandon Greenburg", "Business Coordinator", business26, "https://www.linkedin.com/in/dakota-rosher-065b5a28b/"]];
+let ces26 = [["Griffin York", "Mechanical Chief Engineer", mechPM260, "https://www.linkedin.com/in/amit-sagar1/"],
+    ["Austin Stang", "Mechanical Chief Engineer", mechPM261, "https://www.linkedin.com/in/trevorbendik/"],
+    ["Joshua Kwak", "Electrical Chief Engineer", electricalPM26, "https://www.linkedin.com/in/nathan-achinger/"]];
+let pms26 = [["Emi Sanchez", "Mechanical Integration PM", integrationPM261, "https://www.linkedin.com/in/elijah-baluyot/"],
+    ["Allison Donald", "Mechanical Integration PM", integrationPM262, "https://www.linkedin.com/in/elijah-baluyot/"],
+    ["Marwa Khan", "Electrical Integration PM", integrationPM260, "https://www.linkedin.com/in/jayce-mcmillan/"]];
 let electrical26 = [
-    ["Joshua Kwak", "BMS", bMSLead26, "https://www.linkedin.com/in/jkwak7/"],
-    ["Justin Lopez", "Firmware", firmwareLead26, "https://www.linkedin.com/in/justinclopez/"],
-    ["Bradley Cedarholm", "Strategy", stratLead26, "https://www.linkedin.com/in/bradleycederholm/"]];
+    ["Ahmed Kamel", "BMS", bMSLead26, "https://www.linkedin.com/in/jkwak7/"],
+    ["Richard Carnivale", "Firmware", firmwareLead26, "https://www.linkedin.com/in/justinclopez/"],
+    ["Anthony Zheng", "Strategy", stratLead26, "https://www.linkedin.com/in/bradleycederholm/"]];
 let mech_aero26= [
-    ["Griffin York", "Aerobody", aerobodyLead26, "https://www.linkedin.com/in/griffinyork/"],
-    ["Lucas Chahine", "Battery Pack", batteryPackLead26, "https://www.linkedin.com/in/lucas-chahine-2ba857233/"],
-    ["George Shearer", "Cockpit", cockpitLead26, "https://www.linkedin.com/in/georgeasheareriii/"],
-    ["Callie Monville", "Structures", structuresLead26, "https://www.linkedin.com/in/callie-monville/"],
-    ["Austin Stang", "Suspension", suspensionLead26, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
+    ["Isabella Nowakowski", "Aerobody", aerobodyLead26, "https://www.linkedin.com/in/griffinyork/"],
+    ["Zachary Sargeant", "Battery Pack", batteryPackLead26, "https://www.linkedin.com/in/lucas-chahine-2ba857233/"],
+    ["Austin Reichl", "Cockpit", cockpitLead26, "https://www.linkedin.com/in/georgeasheareriii/"],
+    ["Anneliese Nguyen", "Structures", structuresLead26, "https://www.linkedin.com/in/callie-monville/"],
+    ["Henry Reyes-Perez", "Suspension", suspensionLead26, "https://www.linkedin.com/in/austin-stang-177b972b6/"]
 
 ];
 
@@ -207,6 +208,7 @@ export const get_eboard = (year) => {
     else if (year === "2023") { return executive_board23; }
     else if (year === "2024") { return executive_board24; }
     else if (year === "2025") { return executive_board25; }
+    else if (year === "2026") { return executive_board26; }
     else { return ""; }
 }
 
@@ -218,12 +220,14 @@ export const get_pms = (year) => {
     else if (year === "2023") { return pms23; }
     else if (year === "2024") { return pms24;}
     else if (year === "2025") { return pms25;}
+    else if (year === "2026") { return pms26;}
     else { return ""; }
 }
 
 export const get_ces = (year) => {
     if (year === "2024") { return ces24;}
-    else if (year === "2025") { return ces25}
+    else if (year === "2025") { return ces25;}
+    else if (year === "2026") { return ces26;}
     else { return ""; }
 }
 
@@ -233,6 +237,7 @@ export const get_mech = (year) => {
     else if (year === "2023") { return mech_aero23; }
     else if (year === "2024") { return mech_aero24; }
     else if (year === "2025") { return mech_aero25; }
+    else if (year === "2026") { return mech_aero26; }
     else { return ""; }
 }
 
@@ -241,7 +246,8 @@ export const get_elec = (year) => {
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
     else if (year === "2024") { return electrical24; }
-    else if (year === "2025") { return electrical25; }
+    else if (year === "2025") { return electrical25; }  
+    else if (year === "2026") { return electrical26; }
     else { return ""; }
 }
 

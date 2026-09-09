@@ -9,6 +9,7 @@ export { default as mechPM261 }    from "./Mech_CE_Austin.JPG";
 export { default as electricalPM26 }    from "./Electrical_CE.JPG";
 export { default as integrationPM260 }   from "./Integration_PM_Marwa.JPG";
 export { default as integrationPM261 }   from "./MechIntegration_PM_Emi.JPG";
+export { default as integrationPM262 }   from "./MechIntegration_PM_Allison.JPG";
 export { default as stratLead26 }   from "./Strategy_Lead.JPG";
 export { default as aerobodyLead26 }   from "./Aerobody_Lead.JPG";
 export { default as cockpitLead26 }   from "./Cockpit_Lead.JPG";
