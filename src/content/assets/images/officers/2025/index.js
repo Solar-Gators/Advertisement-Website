@@ -12,7 +12,7 @@ export { default as integrationPM251 }   from "./MechIntegrationPM_Eli.jpeg";
 export { default as stratLead25 }   from "./stratlead25.jpg";
 export { default as aerobodyLead25 }   from "./Aero_Lead.JPG";
 export { default as cockpitLead25 }   from "./Cockpit_lead.JPG";
-export { default as batteryPackLead25 }   from "./Battery_Pack_Lead.JPG";
+export { default as batteryPackLead25 }   from "./BattPackLead.jpeg";
 export { default as bMSLead25 }   from "./bmslead25.JPG";
 export { default as firmwareLead25 }   from "./firmwarelead25.jpg";
 //export { default as solarArrayLead25 }   from "./SolarArrayLead24.JPG";
