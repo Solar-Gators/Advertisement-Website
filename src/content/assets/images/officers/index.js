@@ -1,5 +1,10 @@
 // OFFICER PICTURES -----------------------------
 
+// 2026-27
+import { president26, vicepresident26, treasurer26, secretary26, business26, mechPM260, mechPM261,  electricalPM26, 
+    integrationPM260, integrationPM261, stratLead26, aerobodyLead26, cockpitLead26, batteryPackLead26, bMSLead26, firmwareLead26, solarArrayLead26, structuresLead26, suspensionLead26
+} from './2026/index'
+
 // 2025-26
 import { president25, vicepresident25, treasurer25, secretary25, business25, mechPM250, mechPM251,  electricalPM25, 
     integrationPM250, integrationPM251, stratLead25, aerobodyLead25, cockpitLead25, batteryPackLead25, bMSLead25, firmwareLead25, solarArrayLead25, structuresLead25, suspensionLead25

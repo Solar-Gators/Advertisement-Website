@@ -1,0 +1,20 @@
+export { default as president26 }       from "./President.JPG";
+export { default as vicepresident26 }   from "./Vice_President.JPG";
+export { default as treasurer26 }       from "./Treasurer.JPG";
+export { default as secretary26 }       from "./Secretary.JPG";
+export { default as business26 }        from "./Business_Coordinator.JPG";
+
+export { default as mechPM260 }    from "./Mech_CE_Austin.JPG";
+export { default as mechPM261 }    from "./Mech_CE_Trevor.JPG";
+export { default as electricalPM26 }    from "./Electrical_CE.JPG";
+export { default as integrationPM260 }   from "./Integration_PM_Jayce.JPG";
+export { default as integrationPM261 }   from "./MechIntegrationPM_Eli.jpeg";
+export { default as stratLead26 }   from "./stratlead26.jpg";
+export { default as aerobodyLead26 }   from "./Aero_Lead.JPG";
+export { default as cockpitLead26 }   from "./Cockpit_lead.JPG";
+export { default as batteryPackLead26 }   from "./BattPackLead.jpeg";
+export { default as bMSLead26 }   from "./bmslead26.JPG";
+export { default as firmwareLead26 }   from "./firmwarelead26.jpg";
+//export { default as solarArrayLead26 }   from "./SolarArrayLead26.JPG";
+export { default as structuresLead26 }   from "./Structures_Lead.JPG";
+export { default as suspensionLead26 }   from "./Suspension_Lead.JPG";
