@@ -1,9 +1,12 @@
 ### Advertisement-Website
+
+**Want to edit the website? Start with the [Website Editing Guide](WEBSITE-EDITING-GUIDE.md)** - step by step, no coding experience needed.
+
 - Disable your adblocker to see the github commits on this page
-- Install npm and then [yarn](https://yarnpkg.com/getting-started/install)
+- Install [Node.js](https://nodejs.org/en/download)
 - git clone, then:
 ```
-$ yarn install
+$ npm ci
 $ npm start
 ```
 
