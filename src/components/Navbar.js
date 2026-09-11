@@ -33,6 +33,7 @@ export default function WebsiteNavbar() {
                     <PageLink path="/team" tag="Team"/>
                     <PageLink path="/sponsors" tag="Sponsors"/>
                     <PageLink path="/contact" tag="Contact"/>
+                    <PageLink path="/team-apps" tag="Team Apps"/>
                 </>
             )
         }
