@@ -13,7 +13,7 @@ import img3 from '../content/assets/images/people/team25/SG25_Pit_Lineup.JPG';
 
 //Blurb Section 1
 let p1 = "Solar Gators is a fully student-run engineering design team at " +
-    "the University of Florida. We are passionate about driving innovative and sustainable " +
+    "the UF. We are passionate about driving innovative and sustainable " +
     "technology in the automotive industry. We design, build, and race solar-powered cars to showcase " +
     "the potential of solar energy and inspire the next generation of engineers and innovators. " +
     "Each year we proudly represent the Sunshine State in the Formula Sun Grand Prix (FSGP)."
