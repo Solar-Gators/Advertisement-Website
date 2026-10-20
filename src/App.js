@@ -11,6 +11,7 @@ import Team from './pages/Team'
 import Cars from './pages/Cars'
 import Donate from './pages/Donate'
 import Contact from './pages/Contact'
+import TeamApps from './pages/TeamApps'
 import NotFound from './pages/NotFound'
 
 import ReactGA from 'react-ga'
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/cars" component={Cars} />
           <Route exact path="/donate" component={Donate} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/team-apps" component={TeamApps} />
 
           {/* 404 page */}
           <Route path="*" component={NotFound} /> 
