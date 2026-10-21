@@ -122,8 +122,10 @@ export default function ScrollHero({
             // 0 -> 1 across the whole sequence
             const p = clamp(-rect.top / travel);
 
-            // heading, anniversary line and the counters appear first
-            set('--anniv', ease(seg(p, 0.02, 0.09)));
+            // the counters appear first; the anniversary line waits until
+            // the last car (and its glow) arrives, just after car 4
+            const lastStart = START + (count - 1) * SLOT;
+            set('--anniv', ease(seg(p, lastStart - 0.02, lastStart + 0.05)));
             set('--stats', ease(seg(p, 0.05, 0.12)));
 
             // every car: slide up, light sweep, slide down
@@ -138,8 +140,9 @@ export default function ScrollHero({
                 const outStart = sweepEnd;
                 const out = ease(seg(p, outStart, outStart + 0.05));
                 const presence = inn * (1 - out);
-                setLayer(i, inn, sweep, out, presence);
-                if (presence > glow) glow = presence;
+                // the yellow glow only appears for the last (current) car
+                setLayer(i, inn, sweep, out, isLast ? presence : 0);
+                if (isLast) glow = presence;
                 if (isLast) exitLast = out;
             }
             set('--sun', glow);
@@ -237,7 +240,9 @@ export default function ScrollHero({
 
                 {layers.map((c, i) => (
                     <div
-                        className="scrollhero__car"
+                        className={
+                            'scrollhero__car scrollhero__car--' + c.number
+                        }
                         key={i}
                         ref={(node) => {
                             layerRefs.current[i] = node;
@@ -318,7 +323,7 @@ export default function ScrollHero({
 
                 <div className="scrollhero__ctas">
                     <a
-                        className="scrollhero__btn scrollhero__btn--solid"
+                        className="scrollhero__btn scrollhero__btn--ghost"
                         href="#join"
                         onClick={(e) => {
                             e.preventDefault();
@@ -329,7 +334,7 @@ export default function ScrollHero({
                         Join the team
                     </a>
                     <Link
-                        className="scrollhero__btn scrollhero__btn--ghost"
+                        className="scrollhero__btn scrollhero__btn--solid"
                         to="/donate"
                         onClick={() => {
                             window.scroll(0, 0);

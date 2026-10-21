@@ -261,8 +261,23 @@ html body #root .navbar .dropdown-item:focus {
     color: #fff;
 }
 
-/* Rounded corners on the logo in the nav bar */
-.navbar .navbar-brand img,
-.navbar img {
-    border-radius: 14px;
+/* Dropdown menus (like the one under Sponsors): black text on white */
+html body #root .dropdown-menu {
+    background-color: #fff !important;
+}
+
+html body #root .dropdown-menu .dropdown-item,
+html body #root .navbar .dropdown-menu .dropdown-item,
+html body #root .dropdown-menu a,
+html body #root select,
+html body #root select option {
+    color: #000 !important;
+}
+
+html body #root .dropdown-menu .dropdown-item:hover,
+html body #root .dropdown-menu .dropdown-item:focus,
+html body #root .navbar .dropdown-menu .dropdown-item:hover,
+html body #root .navbar .dropdown-menu .dropdown-item:focus {
+    color: #fa4616 !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
 }
