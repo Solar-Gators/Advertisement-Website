@@ -1,0 +1,264 @@
+/* Home page layout. All rules are scoped to .home-page
+   so other pages are not affected. */
+
+/* The darker blue used at the edges of the hero and for the
+   blue sections. The page behind them is white. */
+.home-page {
+    --home-dark: #283f8c;
+    background: #fff;
+}
+
+/* Blue runs from the hero down to the end of "Meet The Team".
+   "Join Our Team" and "Become A Sponsor" are white.
+   (background-color only, so any background photos stay.) */
+.home-page > *:not(.scrollhero):not(.home-header):not(.horizontal-line):not(#join):not(.sponsor-section) {
+    background-color: var(--home-dark) !important;
+}
+
+.home-page #join,
+.home-page .sponsor-section {
+    background-color: #fff !important;
+    color: #1c2540;
+}
+
+/* dark text on the two white sections */
+.home-page #join :is(h1, h3, h5, h6, p, li, span, label, small, strong, em),
+.home-page .sponsor-section :is(h1, h3, h5, h6, p, li, span, label, small, strong, em) {
+    color: #1c2540;
+}
+
+/* Dark text on the two white sections (titles stay orange) */
+.home-page #join :is(p, li, span, label, small, strong, em),
+.home-page .sponsor-section :is(p, li, span, label, small, strong, em) {
+    color: #1c2540;
+}
+
+/* Only the titles are orange */
+.home-page > *:not(.scrollhero):not(.home-header) :is(h2, h4) {
+    color: #fa4616 !important;
+}
+
+/* Other text keeps its normal colors: white on the blue sections,
+   and the site's usual text color on the white sections. */
+.home-page > *:not(.scrollhero):not(.home-header):not(#join):not(.sponsor-section) :is(p, li):not(.accent_word) {
+    color: #fff;
+}
+
+/* The team slider has no color of its own, so the blue around the
+   pictures is always exactly the section blue. */
+.home-page .slider,
+.home-page .slide-track {
+    background: transparent !important;
+}
+
+/* The picture heading at the top shows only the picture, no text */
+.home-header :is(h1, h2, h3, h4, h5, h6) {
+    display: none !important;
+}
+
+/* "Meet The Team" sliding row. Every picture has exactly the same
+   width and height. The row is the list shown twice, and it slides
+   by exactly half its length, so the loop is seamless. */
+.team-marquee {
+    --headshot-w: 190px;
+    --headshot-h: 238px;
+    --headshot-gap: 36px;
+    /* Exactly 3.5 pictures are visible: 3 whole ones and half of the
+       4th, centered on the page. On small screens it just fills the
+       width available. */
+    width: calc(3.5 * var(--headshot-w) + 3 * var(--headshot-gap));
+    max-width: 100%;
+    margin: 2rem auto 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0, #000 6%, #000 94%, transparent 100%);
+    mask-image: linear-gradient(to right,
+        transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+
+.team-marquee__track {
+    display: flex;
+    gap: var(--headshot-gap);
+    width: max-content;
+    /* a little room on the left, so the first person (the president)
+       starts clear of the soft fade at the edge */
+    padding-left: 56px;
+    animation: team-scroll 420s linear infinite;
+}
+
+.team-marquee__item {
+    flex: 0 0 auto;
+    width: var(--headshot-w);
+    height: var(--headshot-h);
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.team-marquee__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* The row is the list shown twice. It slides by exactly one list
+   (--n pictures), so the loop is seamless. */
+@keyframes team-scroll {
+    to {
+        transform: translateX(calc(
+            -1 * var(--n, 18) * (var(--headshot-w) + var(--headshot-gap))));
+    }
+}
+
+@media (max-width: 600px) {
+    .team-marquee {
+        --headshot-w: 150px;
+        --headshot-h: 188px;
+        --headshot-gap: 26px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .team-marquee__track {
+        animation: none;
+    }
+
+    .team-marquee {
+        overflow-x: auto;
+    }
+}
+
+/* Less space between the hero and "Solar Gators Victory!".
+   The victory section slides up over the empty bottom of the hero. */
+.home-page .awards-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -20vh;
+    padding-top: clamp(20px, 3vw, 40px) !important;
+}
+
+/* "Our Cars" pictures: rounded corners and a soft vignette
+   (the edges fade slightly toward the blue behind them). */
+.cars-section-wrap img {
+    border-radius: 18px;
+    -webkit-mask-image: radial-gradient(ellipse 78% 78% at 50% 50%,
+        #000 58%, rgba(0, 0, 0, 0.3) 100%);
+    mask-image: radial-gradient(ellipse 78% 78% at 50% 50%,
+        #000 58%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+/* Section titles are centered: Our Cars, Meet The Team,
+   Join Our Team, Become A Sponsor */
+.home-page > *:not(.scrollhero):not(.home-header):not(.awards-section) :is(h2, h3, h4) {
+    display: block;
+    float: none;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    letter-spacing: 0.06em;
+}
+
+/* Same spacing for every section, and content never wider than
+   about 1200px on big screens */
+.home-page .section:not(.awards-section) {
+    padding-top: clamp(56px, 7vw, 104px) !important;
+    padding-bottom: clamp(56px, 7vw, 104px) !important;
+    padding-left: max(9vw, calc((100% - 1200px) / 2)) !important;
+    padding-right: max(9vw, calc((100% - 1200px) / 2)) !important;
+}
+
+/* Short orange line under each section title */
+.home-page > *:not(.scrollhero):not(.home-header):not(.awards-section) h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 14px auto 0;
+    background: #fa4616;
+}
+
+/* Sections fade in. The js-reveal class is only added by Home.js
+   after it has started watching, so nothing stays hidden if
+   the script does not run. */
+.home-page.js-reveal .section:not(.awards-section),
+.home-page.js-reveal .stats-strip {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.home-page.js-reveal .section:not(.awards-section).is-visible,
+.home-page.js-reveal .stats-strip.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page.js-reveal .section:not(.awards-section),
+    .home-page.js-reveal .stats-strip {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =====================================================================
+   Final polish
+   ===================================================================== */
+
+/* Section titles use the same typeface as the hero */
+.home-page h2 {
+    font-family: "Orbitron", "Segoe UI", system-ui, sans-serif;
+    font-weight: 800;
+}
+
+/* More comfortable reading */
+.home-page .section p {
+    line-height: 1.7;
+}
+
+/* All buttons on the page share one look (same as the hero buttons) */
+.home-page .btn {
+    border-radius: 999px;
+    padding: 0.85em 2em;
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.home-page .btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+/* Visible focus ring for keyboard users */
+.home-page a:focus-visible,
+.home-page .btn:focus-visible {
+    outline: 2px solid #fa4616;
+    outline-offset: 3px;
+}
+
+/* When "Join the team" scrolls down, leave room for the top menu */
+#join {
+    scroll-margin-top: 90px;
+}
+
+
+/* Home page: all text in the blue sections (car names, team, awards) is white.
+   Orange titles keep their color; the white sections keep dark text. */
+.home-page > *:not(.scrollhero):not(.home-header):not(#join):not(.sponsor-section) :is(h1, h3, h5, h6, p, li, span, label, small, strong, em, figcaption) {
+    color: #fff;
+}
+
+/* Solar Gators Victory: every highlighted (bold) word inside an award
+   description is orange. The description text itself stays white. */
+.home-page .awards-section .award-card-content p :is(*),
+.home-page .awards-section .award-card-content p b,
+.home-page .awards-section .award-card-content p strong {
+    color: var(--color-primary_orange, #ff543a) !important;
+}
