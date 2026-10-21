@@ -77,8 +77,8 @@
     width: 90vmin;
     height: 90vmin;
     background: radial-gradient(circle,
-        rgba(255, 226, 90, 0.65) 0%,
-        rgba(255, 200, 40, 0.32) 32%,
+        rgba(255, 200, 70, 0.65) 0%,
+        rgba(255, 170, 40, 0.32) 32%,
         transparent 62%);
     opacity: calc(var(--sun) * (1 - var(--exit)));
     transform:
@@ -144,7 +144,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.2em;
-    margin: 2vh 0 0 !important;
+    margin: 4vh 0 0 !important;
     padding: 0 !important;
     width: auto !important;
     color: #fff;
@@ -156,7 +156,11 @@
     text-transform: uppercase;
     white-space: nowrap;
     opacity: var(--anniv);
-    transform: translateY(calc((1 - var(--anniv)) * 14px));
+    /* starts down at the height of the car; rises to its place under
+       the title as the glow fades and the car leaves */
+    transform: translateY(calc((1 - var(--anniv)) * 14px
+        + (1 - var(--exit)) * 17vh));
+    text-shadow: 0 2px 18px rgba(10, 20, 60, 0.6);
 }
 
 /* fine lines on both sides of the anniversary text */
@@ -297,10 +301,10 @@
 .scrollhero__car {
     position: absolute;
     left: 50%;
-    top: 56%;
+    top: 50%;
     z-index: 1;
     width: max-content;
-    max-width: 90vw;
+    max-width: 100vw;
     /* --in, --out and --sweep are set for each car by ScrollHero.js */
     --in: 0;
     --out: 0;
@@ -310,7 +314,7 @@
         scale(calc(0.94 + 0.06 * var(--in)));
     opacity: calc(1 - 0.8 * var(--out));
     filter: drop-shadow(0 0 calc(34px * var(--sun))
-        rgba(255, 210, 70, 0.55));
+        rgba(255, 185, 60, 0.55));
     pointer-events: none;
 }
 
@@ -350,9 +354,9 @@
 .scrollhero__photo {
     display: block;
     width: auto;
-    height: auto;
-    max-width: min(62vw, 780px);
-    max-height: 38vh;
+    height: 86vh;   /* photos are scaled UP to this height */
+    max-width: min(100vw, 1900px);
+    object-fit: contain;
 }
 
 /* Light sweeping across the photo. The mask is the photo itself,
@@ -523,8 +527,8 @@
 /* Mobile */
 @media (max-width: 600px) {
     .scrollhero__photo {
-        max-width: 84vw;
-        max-height: 30vh;
+        max-width: 100vw;
+        height: 48vh;
     }
 
     .scrollhero__eyebrow {
@@ -559,4 +563,95 @@ body.nav-hidden nav {
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
+}
+
+
+
+/* Car 4 keeps its own size and sits a little lower than the others */
+.scrollhero__car--4 {
+    top: 47%;
+}
+
+/* Car 2 sits a little higher than the rest */
+.scrollhero__car--2 {
+    top: 43%;
+}
+
+.scrollhero__car--4 .scrollhero__photo {
+    height: 69vh;
+}
+
+.scrollhero__car--4 .scrollhero__photobox {
+    margin-top: 9vh;
+}
+
+@media (max-width: 600px) {
+    .scrollhero__car--4 .scrollhero__photo {
+        height: 42vh;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+   Engineering / HUD look: a faint technical grid, thin corner
+   brackets, glowing monospaced readouts. All quiet and subtle.
+   ------------------------------------------------------------------ */
+.scrollhero__stage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 62% at 50% 52%,
+        #000 0%, transparent 78%);
+    mask-image: radial-gradient(ellipse 70% 62% at 50% 52%,
+        #000 0%, transparent 78%);
+}
+
+.scrollhero__stage::after {
+    content: "";
+    position: absolute;
+    inset: clamp(70px, 11vh, 110px) clamp(16px, 3vw, 44px)
+        clamp(16px, 3vh, 36px);
+    z-index: 0;
+    pointer-events: none;
+    --b: rgba(255, 255, 255, 0.32);
+    background:
+        linear-gradient(var(--b), var(--b)) top left / 26px 1.5px no-repeat,
+        linear-gradient(var(--b), var(--b)) top left / 1.5px 26px no-repeat,
+        linear-gradient(var(--b), var(--b)) top right / 26px 1.5px no-repeat,
+        linear-gradient(var(--b), var(--b)) top right / 1.5px 26px no-repeat,
+        linear-gradient(var(--b), var(--b)) bottom left / 26px 1.5px no-repeat,
+        linear-gradient(var(--b), var(--b)) bottom left / 1.5px 26px no-repeat,
+        linear-gradient(var(--b), var(--b)) bottom right / 26px 1.5px no-repeat,
+        linear-gradient(var(--b), var(--b)) bottom right / 1.5px 26px no-repeat;
+}
+
+.scrollhero__stat-value {
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 22px rgba(250, 70, 22, 0.55);
+}
+
+.scrollhero__stat-label,
+.scrollhero__eyebrow,
+.scrollhero__cue span {
+    font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", Consolas,
+        "Liberation Mono", monospace;
+}
+
+@media (max-width: 600px) {
+    .scrollhero__stage::before {
+        background-size: 44px 44px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .scrollhero__anniv {
+        transform: none;
+    }
 }
