@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.afabdb73.css",
-    "main.js": "/static/js/main.03f03a46.js",
+    "main.css": "/static/css/main.079401f2.css",
+    "main.js": "/static/js/main.c0c903ee.js",
     "static/media/SG25_Team_Photo.JPG": "/static/media/SG25_Team_Photo.fbff4e62d441a3f2fd5f.JPG",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/WertheimPhoto.jpeg": "/static/media/WertheimPhoto.7ac824d623e6f650b37b.jpeg",
@@ -157,7 +157,6 @@
     "static/media/president19.JPG": "/static/media/president19.c3b88f3c3c1e852896ba.JPG",
     "static/media/president20.JPG": "/static/media/president20.c3b88f3c3c1e852896ba.JPG",
     "static/media/ZenithTecnica.png": "/static/media/ZenithTecnica.7023ab3af8b48dd6996e.png",
-    "static/media/logo2.png": "/static/media/logo2.6f13473f0132c3cf5985.png",
     "static/media/IC3D.png": "/static/media/IC3D.630af26ef870a14fd50c.png",
     "static/media/Coilcraft.png": "/static/media/Coilcraft.e80867ff6f6e26458186.png",
     "static/media/facebook_logo0.png": "/static/media/facebook_logo0.7ddd5f1f6916af910777.png",
@@ -168,6 +167,7 @@
     "static/media/Towing Cash Calls Logo.png": "/static/media/Towing Cash Calls Logo.3349b720de32ed3e679e.png",
     "static/media/Mathworks.png": "/static/media/Mathworks.f8a47c4f51793fd98787.png",
     "static/media/linkedin_logo copy.png": "/static/media/linkedin_logo copy.45565e16930dbc203f91.png",
+    "static/media/logo2.png": "/static/media/logo2.178ffe838591f9c8d972.png",
     "static/media/Altair.png": "/static/media/Altair.cd73fbf42c2632ec588b.png",
     "static/media/Signarama.png": "/static/media/Signarama.8934cf37ac4118d90a74.png",
     "static/media/Bridgestone.png": "/static/media/Bridgestone.3ded07ae4e5a30a0031b.png",
@@ -187,11 +187,11 @@
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.afabdb73.css.map": "/static/css/main.afabdb73.css.map",
-    "main.03f03a46.js.map": "/static/js/main.03f03a46.js.map"
+    "main.079401f2.css.map": "/static/css/main.079401f2.css.map",
+    "main.c0c903ee.js.map": "/static/js/main.c0c903ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.afabdb73.css",
-    "static/js/main.03f03a46.js"
+    "static/css/main.079401f2.css",
+    "static/js/main.c0c903ee.js"
   ]
 }
