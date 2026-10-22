@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap");
+
+/* Contact page. Everything is scoped to .ct-page.
+   Same look as the other pages. */
+.ct-page {
+    --k-blue: #283f8c;
+    --k-deep: #1b2e72;
+    --k-orange: #fa4616;
+    --k-mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Consolas,
+        "Liberation Mono", monospace;
+    --k-display: "Orbitron", "Segoe UI", system-ui, sans-serif;
+    background: var(--k-deep);
+    color: #fff;
+    overflow-x: clip;
+}
+
+/* ---------- hero ---------- */
+.ct-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    place-items: center;
+    min-height: min(70vh, 680px);
+    padding: 130px 6vw 90px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* .contact-header-img supplies the picture; these rules make it
+   fill the hero */
+.ct-page .ct-hero__bg {
+    position: absolute !important;
+    inset: -8% 0 !important;
+    z-index: -3;
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-size: cover !important;
+    background-position: center 40% !important;
+    background-repeat: no-repeat !important;
+    transform: translateY(var(--py, 0px));
+    filter: saturate(0.9);
+}
+
+.ct-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: linear-gradient(to bottom,
+        rgba(20, 34, 90, 0.66) 0%,
+        rgba(27, 46, 114, 0.54) 50%,
+        var(--k-deep) 100%);
+}
+
+.ct-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+        #000 0%, transparent 80%);
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+        #000 0%, transparent 80%);
+}
+
+.ct-hero__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes ct-rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes ct-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+.ct-hero__eyebrow {
+    margin: 0 0 14px !important;
+    width: auto !important;
+    color: #ff7a4d !important;
+    font-weight: 700;
+    text-shadow: 0 2px 14px rgba(10, 20, 60, 0.9);
+    font-family: var(--k-mono);
+    font-size: clamp(0.8rem, 1.3vw, 1.05rem);
+    letter-spacing: 0.4em;
+    padding-left: 0.4em;
+    text-align: center !important;
+    text-transform: uppercase;
+    animation: ct-rise 0.9s ease-out both;
+}
+
+.ct-hero__title {
+    margin: 0 !important;
+    padding: 0 0 0 0.14em !important;
+    width: auto !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-family: var(--k-display);
+    font-weight: 800;
+    font-size: clamp(2.2rem, 8.5vw, 7rem);
+    line-height: 1.05;
+    letter-spacing: 0.14em;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+    animation: ct-rise 0.9s ease-out 0.15s both;
+}
+
+.ct-hero__cue {
+    position: absolute;
+    left: 50%;
+    bottom: clamp(24px, 4vh, 46px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transform: translateX(-50%);
+    color: #d3daf0;
+    font-family: var(--k-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.ct-hero__cue i {
+    width: 1px;
+    height: 34px;
+    background: linear-gradient(to bottom, var(--k-orange), transparent);
+    animation: ct-bob 1.8s ease-in-out infinite;
+}
+
+/* ---------- form ---------- */
+.ct-sec {
+    position: relative;
+    padding: clamp(40px, 6vw, 90px) 6vw clamp(72px, 10vw, 140px);
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 64px 64px,
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 64px 64px,
+        var(--k-blue);
+}
+
+.ct-card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(26px, 4vw, 48px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: linear-gradient(160deg,
+        rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+    box-shadow: 0 30px 70px rgba(5, 12, 45, 0.45);
+}
+
+.ct-page .ct-card__title {
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-family: var(--k-display);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 2.6vw, 2rem);
+    letter-spacing: 0.04em;
+    word-spacing: 0.12em;
+}
+
+.ct-card__lead {
+    margin: 0 auto clamp(22px, 3vw, 34px) !important;
+    max-width: 52ch;
+    color: #d3daf0 !important;
+    text-align: center !important;
+    line-height: 1.7;
+}
+
+.ct-field {
+    margin-bottom: 20px;
+}
+
+.ct-page .form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-family: var(--k-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.ct-page .form-control {
+    padding: 0.8em 1em;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 12px;
+    background: rgba(20, 34, 90, 0.55);
+    color: #fff;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.ct-page .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ct-page .form-control:focus {
+    border-color: var(--k-orange);
+    background: rgba(20, 34, 90, 0.75);
+    color: #fff;
+    box-shadow: 0 0 0 3px rgba(250, 70, 22, 0.28);
+    outline: none;
+}
+
+.ct-page textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* error text on the dark card */
+.ct-page .invalid-feedback {
+    color: #ffb199;
+}
+
+.ct-page .was-validated .form-control:invalid,
+.ct-page .form-control.is-invalid {
+    border-color: #ff7a4d;
+}
+
+/* messages */
+.ct-page .alert {
+    margin-bottom: 22px;
+    border-radius: 12px;
+}
+
+/* captcha and submit */
+.ct-captcha {
+    margin: 4px 0 24px;
+}
+
+.ct-page .ct-submit,
+.ct-page .ct-submit.btn-primary {
+    padding: 0.95em 2.6em;
+    border: 2px solid var(--k-orange);
+    border-radius: 999px;
+    background: var(--k-orange);
+    box-shadow: 0 0 28px rgba(250, 70, 22, 0.4);
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ct-page .ct-submit:hover:not(:disabled) {
+    background: #ff6a3d;
+    border-color: #ff6a3d;
+    transform: translateY(-2px);
+}
+
+.ct-page .ct-submit:disabled {
+    opacity: 0.6;
+}
+
+.ct-page .ct-submit:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ct-hero__eyebrow,
+    .ct-hero__title,
+    .ct-hero__cue i {
+        animation: none;
+    }
+
+    .ct-page .form-control,
+    .ct-page .ct-submit {
+        transition: none;
+    }
+}
+
+
+/* =====================================================================
+   Keep faces clear: the title sits in the upper part of the hero,
+   above the people, and the photo is shifted so they sit lower.
+   ===================================================================== */
+.ct-hero {
+    place-items: start center;
+    min-height: min(78vh, 760px);
+    padding-top: clamp(104px, 15vh, 150px);
+}
+
+.ct-page .ct-hero__bg {
+    background-position: center 8% !important;
+}
+
+.ct-page .ct-hero__title {
+    font-size: clamp(2rem, 6.4vw, 5.2rem);
+}
+
+.ct-page .ct-hero__eyebrow {
+    margin-bottom: 10px !important;
+}
