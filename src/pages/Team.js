@@ -1,18 +1,13 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Dropdown from "react-bootstrap/Dropdown";
+import React, { useEffect, useRef, useState } from "react";
 import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev, get_ces} from "../content/assets/images/officers/index";
-import Header from "../components/Header";
-import linkedinLogo from "../content/assets/images/app_icons/linkedin_logo.png";
+import "./Team.css";
 
 //2026-27 Officers: (Names, Positions, Headshots)
 let executive_board26= get_eboard("2026");
 let pms26 = get_pms("2026");
 let ces26 = get_ces("2026")
 let mech_aero26 = get_mech("2026");
-let electrical26 =  get_elec("2026");   
+let electrical26 =  get_elec("2026");
 
 //2025-26 Officers: (Names, Positions, Headshots)
 let executive_board25= get_eboard("2025");
@@ -27,8 +22,6 @@ let pms24 = get_pms("2024");
 let ces24 = get_ces("2024")
 let mech_aero24 = get_mech("2024");
 let electrical24 =  get_elec("2024");
-//let webdev24 = get_webdev("2024");
-
 
 //2023-24 Officers: (Names, Positions, Headshot)
 let executive_board23 = get_eboard("2023");
@@ -37,7 +30,6 @@ let mech_aero23 = get_mech("2023");
 let electrical23 =  get_elec("2023");
 let webdev23 = get_webdev("2023");
 
-
 //2022-23 Officers: (Names, Positions, Headshot)
 let executive_board22 = get_eboard("2022");
 let pms22 = get_pms("2022");
@@ -45,325 +37,236 @@ let mech_aero22 = get_mech("2022");
 let electrical22 =  get_elec("2022");
 let competition_team22 = get_comp_team("2022");
 
-
 //2021-22 Officers
 let executive_board21 = get_eboard("2021");
-//let pms21 = get_pms("2021"); //aerobody: Pierre Angibaud
 let mech_aero21 = get_mech("2021");
 let electrical21 = get_elec("2021");
 let competition_team21 = get_comp_team("2021");
 
-
 //2020-21 Officers
 let executive_board20 = get_eboard("2020");
-//let pms20 = get_pms("2020");
-
 
 //2019-20 Officers
 let executive_board19 = get_eboard("2019");
-//let pms19 = get_pms("2019");
 
+// Every academic year: its label and what is shown for it.
+// "groups" are rows of officers, "comp" is the competition team list.
+const YEARS = [
+    { key: "202627", label: "2026 – 2027", groups: [
+        ["Executive Board", executive_board26],
+        ["Chief Engineers", ces26],
+        ["Project Managers", pms26],
+        ["Mechanical and Aerobody", mech_aero26],
+        ["Electrical", electrical26],
+    ] },
+    { key: "202526", label: "2025 – 2026", groups: [
+        ["Executive Board", executive_board25],
+        ["Chief Engineers", ces25],
+        ["Project Managers", pms25],
+        ["Mechanical and Aerobody", mech_aero25],
+        ["Electrical", electrical25],
+    ] },
+    { key: "202425", label: "2024 – 2025", groups: [
+        ["Executive Board", executive_board24],
+        ["Chief Engineers", ces24],
+        ["Project Managers", pms24],
+        ["Mechanical and Aerobody", mech_aero24],
+        ["Electrical", electrical24],
+    ] },
+    { key: "202324", label: "2023 – 2024", groups: [
+        ["Executive Board", executive_board23],
+        ["Project Managers", pms23],
+        ["Mechanical and Aerobody", mech_aero23],
+        ["Electrical", electrical23],
+        ["Web Development", webdev23],
+    ] },
+    { key: "202223", label: "2022 – 2023", groups: [
+        ["Executive Board", executive_board22],
+        ["Project Managers", pms22],
+        ["Mechanical and Aerobody", mech_aero22],
+        ["Electrical", electrical22],
+    ], comp: competition_team22 },
+    { key: "202122", label: "2021 – 2022", groups: [
+        ["Executive Board", executive_board21],
+        ["Mechanical and Aerobody", mech_aero21],
+        ["Electrical", electrical21],
+    ], comp: competition_team21 },
+    { key: "202021", label: "2020 – 2021", groups: [
+        ["Executive Board", executive_board20],
+    ] },
+    { key: "201920", label: "2019 – 2020", groups: [
+        ["Executive Board", executive_board19],
+    ] },
+];
 
-function AcademicYear({ eventkey }) {
-    let year1;
-    let year2;
+// one officer: headshot, name (with LinkedIn if there is one), title
+// Moves a headshot up or down (in % of its height) so everyone's eyes
+// line up. Cameras and cropping differ a little from photo to photo.
+// Positive moves the picture down, negative moves it up. Add a line
+// for anyone whose eyes are still off.
+const EYE_SHIFT = {
+    "Isabella Lucarelli": 4.6,
+    "Natalia Sampaio": -3.1,
+    "Jason Flick": 0.6,
+    "Natalie Romero": 0,
+    "Brandon Greenburg": -2.5,
+};
 
-    if (eventkey === "201920") {
-        year1 = 2019;
-        year2 = 2020;
-    } else if (eventkey === "202021") {
-        year1 = 2020;
-        year2 = 2021;
-    } else if (eventkey === "202122") {
-        year1 = 2021;
-        year2 = 2022;
-    } else if (eventkey === "202223") {
-        year1 = 2022;
-        year2 = 2023;
-    } else if (eventkey === "202324") {
-        year1 = 2023;
-        year2 = 2024;
-    } 
-    else if (eventkey === "202425"){
-        year1 = 2024
-        year2 = 2025
-    }
-    else if (eventkey === "202526"){
-        year1 = 2025
-        year2 = 2026
-     }
-    else if (eventkey === "202627"){
-        year1 = 2026
-        year2 = 2027
-    }
+// one officer: headshot, LinkedIn logo (if there is a link), name, title
+function Officer({ name, title, img, linkedin, index }) {
     return (
-        <h5>{year1} - {year2}</h5>
+        <li className="team-card" style={{ '--i': index }}>
+            <div
+                className="team-card__photo"
+                style={{ '--eye': (EYE_SHIFT[name] || 0) + '%' }}
+            >
+                <img src={img} alt={name} loading="lazy" />
+                {linkedin && (
+                    <a
+                        className="team-card__in"
+                        href={linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={name + " on LinkedIn"}
+                    >
+                        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                            <rect width="24" height="24" rx="4" fill="#0A66C2" />
+                            <path
+                                fill="#fff"
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
+                            />
+                        </svg>
+                    </a>
+                )}
+            </div>
+            <div className="team-card__info">
+                <h3 className="team-card__name">
+                    <span>{name}</span>
+                </h3>
+                <p className="team-card__title">{title}</p>
+            </div>
+        </li>
     );
 }
 
-function OfficerTeam({ eventkey, executive_board, on_mobile }) {
+export default function Team() {
+    const [yearKey, setYearKey] = useState("202627");
+    const year = YEARS.find((y) => y.key === yearKey) || YEARS[0];
 
-    //Individual Officer
-    let Officer = ({ name, title, img, linkedin }) => {
-        let padding = 13.5;
-        if (on_mobile) {
-            padding = 2;
-        }
-        //to align title properly for people with long name
-        if (name.length > 19) {
-            padding = 2;
-        }
-        return (
-            <Col className="officer-col">
-                <div className={"officer-container"}>
-                    <div className={"headshot"}>
-                        <img className={"headshot-img"} src={img} alt={"headshot"}/>
-                    </div>
-                {/*Added LinkedIn Profiles to All  2025-26 Members*/}    
-                
+    const heroRef = useRef(null);
 
-                {/* Name + optional LinkedIn icon */}
-                <h5 style={{ paddingBottom: padding, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", }}>
-                    {name}
-                    {linkedin && (
-                        <a href={linkedin} target="_blank" rel="noopener noreferrer" style={{ marginLeft: "0.5rem" }}>
-                            <img src={linkedinLogo} alt="LinkedIn" style={{ width: "20px", height: "20px" }} />
-                        </a>
-                    )}
-                </h5>
+    // hero parallax and the top menu hiding while scrolling down
+    useEffect(() => {
+        const reduce = window.matchMedia(
+            '(prefers-reduced-motion: reduce)'
+        ).matches;
 
-                <h6 style={{ paddingTop: padding }}>{title}</h6>
-            </div>
-        </Col>
-    )
-}    
+        let frame = null;
+        let lastY = window.scrollY;
 
-
-    //Row of officers in same category
-    let OfficersRow = ({heading, officers}) => {
-        return (
-            <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-                <h2 id="officer-category-heading">{heading}</h2>
-                {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} linkedin={officers[0][3]}/> : ""}
-                {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} linkedin={officers[1][3]}/> : ""}
-                {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]} linkedin={officers[2][3]}/> : ""}
-                {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]} linkedin={officers[3][3]}/> : ""}
-                {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]} linkedin={officers[4][3]}/> : ""}
-                {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]} linkedin={officers[5][3]}/> : ""}
-            </Row>
-        )
-    }
-
-    //Competition Team
-    let CompList = ({list}) => {
-        let Loop = () => {
-            const allNames = [];    //array of div rows
-            let name_col0 = [];
-            let name_col1 = [];
-
-            let midpoint = Math.floor(list.length / 2);
-            list.forEach(printName);
-
-            function printName(value, index, array) {
-                if (index < midpoint) {
-                    name_col0.push(<p>{value}</p>);
-                }
-                else {
-                    name_col1.push(<p>{value}</p>);
-                }
+        const update = () => {
+            frame = null;
+            const hero = heroRef.current;
+            if (hero && !reduce) {
+                const y = Math.min(window.scrollY, window.innerHeight * 1.2);
+                hero.style.setProperty('--py', (y * 0.22).toFixed(1) + 'px');
             }
+        };
 
-            allNames.push(<div className={"comp_name_col"}>{name_col0}</div>)
-            allNames.push(<div className={"comp_name_col"}>{name_col1}</div>)
-            return <div id={"comp_names"}>{allNames}</div>;
-        }
+        const onScroll = () => {
+            const y = window.scrollY;
+            if (y <= 10) {
+                document.body.classList.remove('nav-hidden');
+            } else if (Math.abs(y - lastY) > 2) {
+                document.body.classList.toggle('nav-hidden', y > lastY);
+            }
+            lastY = y;
+            if (frame === null) frame = requestAnimationFrame(update);
+        };
 
-        return (
-            <>
-                <h3>Competition Team</h3>
-                <div className={"comp_team_container"}>
-                    <Loop/>
+        update();
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+            if (frame !== null) cancelAnimationFrame(frame);
+            document.body.classList.remove('nav-hidden');
+        };
+    }, []);
+
+    return (
+        <div className="team-page">
+
+            {/* ---------- Hero ---------- */}
+            <header className="team-hero" ref={heroRef}>
+                {/* the same photo the Team page header used before */}
+                <div className="team-hero__bg team-header-img" />
+                <div className="team-hero__inner">
+                    <p className="team-hero__eyebrow">University of Florida</p>
+                    <h1 className="team-hero__title">Our Team</h1>
                 </div>
-            </>
-        )
+                <div className="team-hero__cue" aria-hidden="true">
+                    <span>Scroll</span>
+                    <i />
+                </div>
+            </header>
 
-    }
+            {/* ---------- Year picker and officers ---------- */}
+            <section className="team-sec">
+                <div className="team-wrap">
 
-    //Switch Academic Year
-    if (eventkey === "202627") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board26}/>
-                <OfficersRow heading="Chief Engineers" officers={ces26}/>
-                <OfficersRow heading="Project Managers" officers={pms26}/>
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero26}/>
-                <OfficersRow heading="Electrical" officers={electrical26}/>
-                {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
-                {/*<CompList list={competition_team23}/>*/}
-            </Col>
-        )
-     }
-     else if (eventkey === "202526") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board25}/>
-                <OfficersRow heading="Chief Engineers" officers={ces25}/>
-                <OfficersRow heading="Project Managers" officers={pms25}/>
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero25}/>
-                <OfficersRow heading="Electrical" officers={electrical25}/>
-                {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
-                {/*<CompList list={competition_team23}/>*/}
-            </Col>
-        )
-    }
-    else if (eventkey === "202425") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board24}/>
-                <OfficersRow heading="Chief Engineers" officers={ces24}/>
-                <OfficersRow heading="Project Managers" officers={pms24}/>
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero24}/>
-                <OfficersRow heading="Electrical" officers={electrical24}/>
-                {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
-                {/*<CompList list={competition_team23}/>*/}
-            </Col>
-        )
-    }
-    else if (eventkey === "202324") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board23}/>
-                <OfficersRow heading="Project Managers" officers={pms23}/>
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero23}/>
-                <OfficersRow heading="Electrical" officers={electrical23}/>
-                <OfficersRow heading="Web Development" officers={webdev23}/>
-                {/*<CompList list={competition_team23}/>*/}
-            </Col>
-        )
-    }
-    else if (eventkey === "202223") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board22}/>
-                <OfficersRow heading="Project Managers" officers={pms22}/>
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}/>
-                <OfficersRow heading="Electrical" officers={electrical22}/>
-                <CompList list={competition_team22}/>
-            </Col>
-        )
-    }
-    else if (eventkey === "202122") {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board21}/>
-                {/*<OfficersRow heading="Project Managers" officers={pms21}/>*/}
-                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}/>
-                <OfficersRow heading="Electrical" officers={electrical21}/>
-                <CompList list={competition_team21}/>
-            </Col>
-        )
-    }
-    else {
-        return (
-            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
-                <OfficersRow heading="Executive Board" officers={executive_board}/>
-            </Col>
-        )
-    }
-}
+                    <div className="team-years" role="tablist" aria-label="Academic year">
+                        {YEARS.map((y) => (
+                            <button
+                                key={y.key}
+                                type="button"
+                                role="tab"
+                                aria-selected={y.key === yearKey}
+                                className={'team-years__btn' + (y.key === yearKey ? ' is-on' : '')}
+                                onClick={() => setYearKey(y.key)}
+                            >
+                                {y.label}
+                            </button>
+                        ))}
+                    </div>
 
-export default class Team extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            executive_board: executive_board23,
-            eventkey: "202627"
-        }
-    }
+                    {/* re-created when the year changes, so the cards animate in */}
+                    <div className="team-year" key={year.key}>
+                        {year.groups.map(([heading, officers]) => {
+                            const list = officers || [];
+                            if (!list.length) return null;
+                            return (
+                                <div className="team-group" key={heading}>
+                                    <h2 className="team-group__title">{heading}</h2>
+                                    <ul className="team-grid">
+                                        {list.map((o, i) => (
+                                            <Officer
+                                                key={o[0] + i}
+                                                name={o[0]}
+                                                title={o[1]}
+                                                img={o[2]}
+                                                linkedin={o[3]}
+                                                index={i}
+                                            />
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        })}
 
-    render() {
-        /* mql = media query list (https://dev.to/yanns1/how-to-render-different-components-based-on-screen-size-2p35) */
-        const mql = window.matchMedia('(max-width: 425px)');
-        let mobileView = mql.matches;
-
-        return (
-            <React.Fragment>
-            <Header title={"Our Team"} imgcss={"team-header-img"}/>
-
-            {/*  Page Contents  */}
-            <Container fluid="true" className="section" style={{background: "#283f8c"}}>
-                {/*  Dropdown Menu  */}
-                <Col style={{justifyContent: "center"}}>
-                    <Dropdown onSelect={
-                        (eventKey) => {
-                            if (eventKey === "201920") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board19, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202021") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board20,eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202122") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board21, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202223") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board22, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202324") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board23, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202425") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board24, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202526") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board25, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202627") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board26, eventkey: eventKey }
-                                });
-                            }
-                            if (eventKey === "202627") {
-                                this.setState((state) => {
-                                    return { executive_board: executive_board25, eventkey: eventKey }
-                                });
-                            }
-                        }}
-                    >
-                        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
-                            <AcademicYear eventkey={this.state.eventkey} />
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu className="dropdown-menu">
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="201920">2019 - 2020</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202021">2020 - 2021</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202122">2021 - 2022</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202223">2022 - 2023</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202324">2023 - 2024</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202425">2024 - 2025</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202526">2025 - 2026</Dropdown.Item>
-                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202627">2026 - 2027</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-              </Col>
-
-                <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board} on_mobile={mobileView}/>
-
-            </Container>
-            </React.Fragment>
-        );
-    }
+                        {year.comp && year.comp.length > 0 && (
+                            <div className="team-group">
+                                <h2 className="team-group__title">Competition Team</h2>
+                                <ul className="team-comp">
+                                    {year.comp.map((n, i) => (
+                                        <li key={n + i}>{n}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
 }

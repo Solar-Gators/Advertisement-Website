@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap");
+
+/* Team Apps page. Everything is scoped to .ta-page.
+   Same look as the other pages. */
+.ta-page {
+    --p-blue: #283f8c;
+    --p-deep: #1b2e72;
+    --p-orange: #fa4616;
+    --p-mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Consolas,
+        "Liberation Mono", monospace;
+    --p-display: "Orbitron", "Segoe UI", system-ui, sans-serif;
+    background: var(--p-deep);
+    color: #fff;
+    overflow-x: clip;
+}
+
+/* ---------- hero ---------- */
+.ta-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    place-items: start center;
+    min-height: min(70vh, 680px);
+    padding: clamp(104px, 15vh, 150px) 6vw 90px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* .team-apps-header-img supplies the picture; these rules make it
+   fill the hero */
+.ta-page .ta-hero__bg {
+    position: absolute !important;
+    inset: -8% 0 !important;
+    z-index: -3;
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-size: cover !important;
+    background-position: center 20% !important;
+    background-repeat: no-repeat !important;
+    transform: translateY(var(--py, 0px));
+    filter: saturate(0.9);
+}
+
+.ta-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: linear-gradient(to bottom,
+        rgba(20, 34, 90, 0.66) 0%,
+        rgba(27, 46, 114, 0.54) 50%,
+        var(--p-deep) 100%);
+}
+
+.ta-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+        #000 0%, transparent 80%);
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+        #000 0%, transparent 80%);
+}
+
+.ta-hero__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes ta-rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes ta-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+.ta-hero__eyebrow {
+    margin: 0 0 10px !important;
+    width: auto !important;
+    color: #ff7a4d !important;
+    font-weight: 700;
+    text-shadow: 0 2px 14px rgba(10, 20, 60, 0.9);
+    font-family: var(--p-mono);
+    font-size: clamp(0.8rem, 1.3vw, 1.05rem);
+    letter-spacing: 0.4em;
+    padding-left: 0.4em;
+    text-align: center !important;
+    text-transform: uppercase;
+    animation: ta-rise 0.9s ease-out both;
+}
+
+.ta-hero__title {
+    margin: 0 !important;
+    padding: 0 0 0 0.14em !important;
+    width: auto !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-family: var(--p-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 6.4vw, 5.2rem);
+    line-height: 1.05;
+    letter-spacing: 0.14em;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+    animation: ta-rise 0.9s ease-out 0.15s both;
+}
+
+.ta-hero__cue {
+    position: absolute;
+    left: 50%;
+    bottom: clamp(24px, 4vh, 46px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transform: translateX(-50%);
+    color: #d3daf0;
+    font-family: var(--p-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.ta-hero__cue i {
+    width: 1px;
+    height: 34px;
+    background: linear-gradient(to bottom, var(--p-orange), transparent);
+    animation: ta-bob 1.8s ease-in-out infinite;
+}
+
+/* ---------- intro ---------- */
+.ta-intro {
+    padding: clamp(40px, 6vw, 84px) 6vw clamp(8px, 2vw, 24px);
+    background: var(--p-deep);
+    text-align: center;
+}
+
+.ta-intro p {
+    max-width: 780px;
+    margin: 0 auto !important;
+    color: #e6ebff !important;
+    text-align: center !important;
+    font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+    line-height: 1.85;
+}
+
+/* ---------- app cards ---------- */
+.ta-sec {
+    padding: clamp(32px, 5vw, 72px) 6vw clamp(72px, 10vw, 140px);
+    background: var(--p-deep);
+}
+
+.ta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: clamp(16px, 2.2vw, 26px);
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+@keyframes ta-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: none; }
+}
+
+.ta-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px 26px 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    background: linear-gradient(160deg,
+        rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02));
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: transform 0.3s ease, border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    animation: ta-in 0.6s ease-out both;
+    animation-delay: calc(var(--i, 0) * 70ms);
+}
+
+/* soft orange light under the mouse */
+.ta-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%),
+        rgba(250, 70, 22, 0.22), transparent 70%);
+    transition: opacity 0.3s ease;
+}
+
+.ta-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(250, 70, 22, 0.6);
+    box-shadow: 0 18px 44px rgba(5, 12, 45, 0.45);
+}
+
+.ta-card:hover::before {
+    opacity: 1;
+}
+
+.ta-card:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+.ta-card__num {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--p-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+}
+
+.ta-page .ta-card__name {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    color: var(--p-orange) !important;
+    text-align: left !important;
+    font-family: var(--p-display);
+    font-weight: 800;
+    font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+    letter-spacing: 0.04em;
+    word-spacing: 0.1em;
+}
+
+.ta-page .ta-card__text {
+    position: relative;
+    flex: 1;
+    margin: 0 !important;
+    color: #e6ebff !important;
+    text-align: left !important;
+    line-height: 1.7;
+}
+
+.ta-card__open {
+    position: relative;
+    margin-top: 8px;
+    color: #fff;
+    font-family: var(--p-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.ta-card__open i {
+    display: inline-block;
+    font-style: normal;
+    color: var(--p-orange);
+    transition: transform 0.25s ease;
+}
+
+.ta-card:hover .ta-card__open i {
+    transform: translate(3px, -3px);
+}
+
+@media (max-width: 520px) {
+    .ta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ta-hero__eyebrow,
+    .ta-hero__title,
+    .ta-hero__cue i,
+    .ta-card {
+        animation: none;
+    }
+
+    .ta-card,
+    .ta-card__open i {
+        transition: none;
+    }
+}
